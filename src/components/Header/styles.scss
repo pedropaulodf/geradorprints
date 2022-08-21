@@ -49,3 +49,27 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .header-container {
+    .header-content {
+      .btnSection {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+}

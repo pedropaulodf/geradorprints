@@ -9,3 +9,10 @@
     margin-bottom: 10px;
   }
 }
+
+@media screen and (max-width: 501px) {
+  .settings-container {
+    border-right: none;
+    border-bottom: 2px dashed #b9b9b9;
+  }
+}

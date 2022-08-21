@@ -10,12 +10,14 @@ export default function Header() {
           <div className="logo">
             <p>GERADOR DE PRINTS</p>
           </div>
-          <div
-            className="git-icon-container"
-            onClick={() => alert("repositório")}
+          <a
+            href="https://github.com/pedropaulodf/geradorprints"
+            target="_blank"
           >
-            <FiGithub color="#333333" size={22} />
-          </div>
+            <div className="git-icon-container">
+              <FiGithub color="#333333" size={22} />
+            </div>
+          </a>
         </div>
         <div className="btnSection">
           <Button
