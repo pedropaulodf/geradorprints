@@ -1,23 +1,8 @@
-import html2canvas from "html2canvas";
+import domtoimage from "dom-to-image";
+import { saveAs } from "file-saver";
 
-const exportAsImage = async (element: any, imageFileName: string) => {
-  const canvas = await html2canvas(element);
-  const image = canvas.toDataURL("image/png", 1.0);
-  downloadImage(image, imageFileName);
-};
-
-const downloadImage = (blob: any, fileName: string) => {
-  const fakeLink = window.document.createElement("a");
-  // fakeLink.style = "display:none;";
-  fakeLink.download = fileName;
-
-  fakeLink.href = blob;
-
-  document.body.appendChild(fakeLink);
-  fakeLink.click();
-  document.body.removeChild(fakeLink);
-
-  fakeLink.remove();
-};
-
-export default exportAsImage;
+export function exportAsImage(element: any, imageFileName = "imagem") {
+  domtoimage.toBlob(element).then(function (blob) {
+    saveAs(blob, `${imageFileName}.png`);
+  });
+}
