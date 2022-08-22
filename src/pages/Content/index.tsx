@@ -14,6 +14,7 @@ export default function Content() {
         style={{ zoom: 0.2 }}
       /> */}
       <ScreenLogin />
+      <hr style={{ margin: "2em 0" }} />
       <h3>iPad:</h3>
     </div>
   );

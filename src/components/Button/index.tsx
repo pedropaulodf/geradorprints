@@ -24,18 +24,17 @@ export default function Button({
       <div className="title">
         <p>{title}</p>
       </div>
-
-      {subTitle && (
-        <div className="subtitle">
-          <div>
+      <div className="subtitle-icon-box">
+        {subTitle && (
+          <div className="subtitle">
             <p>{subTitle}</p>
           </div>
-        </div>
-      )}
+        )}
 
-      <div className="icon">
-        <div>
-          <FiDownload size={22} />
+        <div className="icon">
+          <div>
+            <FiDownload size={22} />
+          </div>
         </div>
       </div>
     </button>

@@ -8,6 +8,9 @@ export default function Settings() {
     setFundoAppBlur,
     setFundoAppOpacity,
     setloginBoxOpacity,
+    fundoAppBlur,
+    fundoAppOpacity,
+    loginBoxOpacity,
   } = useSettingsContext();
 
   function changeRootVarAtribute(
@@ -73,7 +76,10 @@ export default function Settings() {
         </div>
         <div className="input-container">
           <label>
-            <span>Fundo App OPACITY:</span>
+            <span>
+              Fundo App OPACITY:{" "}
+              <span className="span-detail">{fundoAppOpacity}%</span>
+            </span>
           </label>
           <input
             type="range"
@@ -90,7 +96,10 @@ export default function Settings() {
         </div>
         <div className="input-container">
           <label>
-            <span>Fundo App BLUR:</span>
+            <span>
+              Fundo App BLUR:{" "}
+              <span className="span-detail">{fundoAppBlur}px</span>
+            </span>
           </label>
           <input
             type="range"
@@ -107,7 +116,10 @@ export default function Settings() {
         </div>
         <div className="input-container">
           <label>
-            <span>Login box OPACITY:</span>
+            <span>
+              Login box OPACITY:{" "}
+              <span className="span-detail">{loginBoxOpacity}%</span>
+            </span>
           </label>
           <input
             type="range"

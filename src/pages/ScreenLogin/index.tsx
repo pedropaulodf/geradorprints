@@ -75,10 +75,13 @@ export default function ScreenLogin() {
           }}
         ></div>
       </div>
-      <Button
-        title="Baixar"
-        onPress={() => exportAsImage(exportRef.current, "screenLogin")}
-      />
+      <div style={{ marginTop: "1em" }}>
+        <Button
+          title="Baixar"
+          subTitle="1111 x 2222"
+          onPress={() => exportAsImage(exportRef.current, "screenLogin")}
+        />
+      </div>
     </div>
   );
 }

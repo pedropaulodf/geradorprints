@@ -5,6 +5,9 @@
   align-items: center;
 
   font-size: 16px;
+  color: #ffffff;
+
+  width: 100%;
 
   &:hover {
     filter: brightness(90%);
@@ -12,27 +15,36 @@
 
   .title {
     padding: 0px 16px;
+    width: inherit;
   }
 
-  .subtitle {
-    padding: 6px 10px;
-    height: calc(100% - 12px);
+  .subtitle-icon-box {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #00000040;
 
-    p {
-      font-weight: bold;
+    .subtitle {
+      padding: 14px 14px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #00000040;
+      width: max-content;
+
+      p {
+        font-weight: bold;
+      }
     }
-  }
 
-  .icon {
-    padding: 10px 6px;
-    background-color: #00000060;
-    display: flex;
-    height: -webkit-fill-available;
-    justify-content: center;
-    align-items: center;
+    .icon {
+      padding: 10px 6px;
+      background-color: #00000060;
+      display: flex;
+      height: -webkit-fill-available;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

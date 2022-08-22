@@ -21,17 +21,16 @@ export default function Header() {
         </div>
         <div className="btnSection">
           <Button
-            title="Salvar iPhone"
-            onPress={() => alert("Salvar iPhone")}
+            title="Baixar iPhone"
+            onPress={() => alert("Baixar iPhone")}
             bgColor="#0077BD"
           />
           <Button
-            title="Salvar iPad"
-            subTitle="1042 x 2346"
-            onPress={() => alert("Salvar iPad")}
+            title="Baixar iPad"
+            onPress={() => alert("Baixar iPad")}
             bgColor="#815A20"
           />
-          <Button title="Salvar Todos" onPress={() => alert("Salvar Todos")} />
+          <Button title="Baixar Todos" onPress={() => alert("Baixar Todos")} />
         </div>
       </div>
     </div>
