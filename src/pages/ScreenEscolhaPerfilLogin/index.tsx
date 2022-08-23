@@ -3,38 +3,37 @@ import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { IoAlertCircleOutline } from "react-icons/io5";
 
-import { userImageBase64 } from "../../assets/base64/user-icon";
 import "./styles.scss";
 
 const LISTA_PERFIS = [
   {
     key: 1,
-    imgUrl: userImageBase64,
+    imgUrl: "/user.png",
     name: "Lais",
   },
   {
     key: 2,
-    imgUrl: userImageBase64,
+    imgUrl: "/user.png",
     name: "Chris",
   },
   {
     key: 3,
-    imgUrl: userImageBase64,
+    imgUrl: "/user.png",
     name: "Davi",
   },
   {
     key: 4,
-    imgUrl: userImageBase64,
+    imgUrl: "/user.png",
     name: "Theo",
   },
   {
     key: 5,
-    imgUrl: userImageBase64,
+    imgUrl: "/user.png",
     name: "Elisa",
   },
   {
     key: 6,
-    imgUrl: userImageBase64,
+    imgUrl: "/user.png",
     name: "Pedro",
   },
 ];
