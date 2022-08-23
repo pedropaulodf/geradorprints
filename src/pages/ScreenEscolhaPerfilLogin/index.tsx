@@ -8,32 +8,32 @@ import "./styles.scss";
 const LISTA_PERFIS = [
   {
     key: 1,
-    imgUrl: "../../../public/user.png",
+    imgUrl: "public/user.png",
     name: "Lais",
   },
   {
     key: 2,
-    imgUrl: "../../../public/user.png",
+    imgUrl: "public/user.png",
     name: "Chris",
   },
   {
     key: 3,
-    imgUrl: "../../../public/user.png",
+    imgUrl: "public/user.png",
     name: "Davi",
   },
   {
     key: 4,
-    imgUrl: "../../../public/user.png",
+    imgUrl: "public/user.png",
     name: "Theo",
   },
   {
     key: 5,
-    imgUrl: "../../../public/user.png",
+    imgUrl: "public/user.png",
     name: "Elisa",
   },
   {
     key: 6,
-    imgUrl: "../../../public/user.png",
+    imgUrl: "public/user.png",
     name: "Pedro",
   },
 ];
