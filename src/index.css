@@ -20,6 +20,9 @@
   --fundo-app-opacity: 70%;
   --fundo-app-blur: 3px;
   --box-login-opacity: 100%;
+
+  --screen-print-width: 720px;
+  --screen-print-height: 1553px;
 }
 
 * {

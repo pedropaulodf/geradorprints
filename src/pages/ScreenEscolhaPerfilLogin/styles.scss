@@ -1,0 +1,30 @@
+.screen-escolhaperfil-container {
+  width: var(--screen-print-width);
+  height: var(--screen-print-height);
+
+  background-color: #ffffff;
+
+  border: 1px solid black;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 4px;
+
+  overflow: hidden;
+
+  .screen-container {
+    .list-container {
+      margin: 0 1.3em;
+    }
+    .bottom-left-arrow {
+      position: absolute;
+      left: 1em;
+      bottom: 2em;
+      background-color: var(--color-secondary);
+    }
+  }
+}

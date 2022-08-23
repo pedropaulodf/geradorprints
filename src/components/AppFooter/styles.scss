@@ -1,0 +1,37 @@
+.appfooter-container {
+  width: var(--screen-print-width);
+  height: 9em;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-top: 1px solid #dfdfdf;
+
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.5em;
+
+  color: #000000;
+  position: absolute;
+  bottom: 0;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  .carteirinha-digital-section {
+    img {
+      width: 3.4em;
+      height: 3.4em;
+      max-width: 3.4em;
+      max-height: 3.4em;
+    }
+
+    p {
+      color: #686868;
+    }
+  }
+}

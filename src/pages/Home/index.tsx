@@ -12,7 +12,7 @@ export default function Home() {
         <div>
           <Settings />
         </div>
-        <div>
+        <div style={{ maxWidth: "900px" }}>
           <Content />
         </div>
       </div>

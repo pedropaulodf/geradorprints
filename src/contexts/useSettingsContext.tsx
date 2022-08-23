@@ -3,6 +3,7 @@ import React, {
   Dispatch,
   SetStateAction,
   useContext,
+  useRef,
   useState,
 } from "react";
 
@@ -17,6 +18,9 @@ type PropsSettingsContext = {
   setFundoAppBlur: Dispatch<SetStateAction<number>>;
   loginBoxOpacity: number;
   setloginBoxOpacity: Dispatch<SetStateAction<number>>;
+  refScreenLogin: any;
+  refScreenFinanceiro: any;
+  refScreenEscolhaPerfilLogin: any;
 };
 
 const SettingsContext = createContext<PropsSettingsContext>(
@@ -26,6 +30,10 @@ const SettingsContext = createContext<PropsSettingsContext>(
 export const SettingsContextProvider: React.FC<{
   children: React.ReactNode;
 }> = ({ children }) => {
+  const refScreenLogin = useRef<any>();
+  const refScreenFinanceiro = useRef<any>();
+  const refScreenEscolhaPerfilLogin = useRef<any>();
+
   const [colorPrimary, setColorPrimary] = useState("#0077bd");
   const [colorSecondary, setColorSecondary] = useState("#ed3237");
   const [fundoAppOpacity, setFundoAppOpacity] = useState(70);
@@ -45,6 +53,9 @@ export const SettingsContextProvider: React.FC<{
         setFundoAppBlur,
         loginBoxOpacity,
         setloginBoxOpacity,
+        refScreenLogin,
+        refScreenFinanceiro,
+        refScreenEscolhaPerfilLogin,
       }}
     >
       {children}

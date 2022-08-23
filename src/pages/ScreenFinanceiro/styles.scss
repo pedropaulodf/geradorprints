@@ -1,0 +1,46 @@
+.screen-financeiro-container {
+  width: var(--screen-print-width);
+  height: var(--screen-print-height);
+
+  background-color: #ffffff;
+
+  border: 1px solid black;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 4px;
+
+  overflow: hidden;
+
+  .screen-container {
+    .list-header {
+      background-color: var(--color-secondary);
+      margin: 2.6em 1.3em 1em 1.3em;
+      height: 6.2em;
+      border-radius: 1.2em;
+
+      display: grid;
+      grid-template-columns: 0.1fr 0.3fr 0.5fr 0.1fr;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+    }
+
+    .list-container {
+      margin: 0 1.3em;
+    }
+  }
+}

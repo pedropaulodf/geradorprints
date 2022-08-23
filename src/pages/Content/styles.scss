@@ -1,3 +1,14 @@
 .content-container {
   padding-top: 30px;
 }
+
+.screens-group-row {
+  overflow-x: scroll;
+  // width: calc(900px * 2.4);
+  // width: calc(900px * 2.4);
+  // height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  // transform: translateX(((900px * 2.4) * (0.4 - 1))/2) translateY((1553px * (0.4 - 1))/2) scale(0.4);
+}

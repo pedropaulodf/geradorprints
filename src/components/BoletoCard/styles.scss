@@ -1,0 +1,35 @@
+.cardboleto-container {
+  display: grid;
+  grid-template-columns: 0.1fr 0.3fr 0.5fr 0.1fr;
+  align-items: center;
+
+  border: 2px solid #dfdfdf;
+  background-color: #ffffff;
+
+  margin-bottom: 0.8em;
+  border-radius: 1.2em;
+
+  padding: 2.8em 1em;
+
+  p {
+    font-size: 1.7em;
+    text-align: center;
+    color: #000000;
+  }
+
+  .dot-payment-status {
+    width: 1em;
+    height: 1em;
+    border-radius: 2em;
+  }
+
+  .arrow-left-icon-box {
+    background-color: var(--color-secondary);
+    width: 3.7em;
+    height: 3.7em;
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
