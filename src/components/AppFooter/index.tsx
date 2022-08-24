@@ -1,6 +1,6 @@
 import { TbGridDots } from "react-icons/tb";
 
-import qrCodeIconSVG from "../../assets/qr-code.svg";
+import QrCodeSvg from "../../assets/svgComponents/QrCodeSvg";
 
 import "./styles.scss";
 
@@ -12,7 +12,7 @@ export default function AppFooter() {
         <p>Meus Dados</p>
       </div>
       <div className="carteirinha-digital-section">
-        <img src={qrCodeIconSVG} alt="QR code icon" />
+        <QrCodeSvg size="3.4em" />
         <p>Carteirinha Digital</p>
       </div>
     </div>

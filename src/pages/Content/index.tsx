@@ -1,15 +1,19 @@
-import { useEffect, useRef } from "react";
 import Button from "../../components/Button";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { exportAsImage } from "../../Utils/utils";
 import ScreenEscolhaPerfilLogin from "../ScreenEscolhaPerfilLogin";
 import ScreenFinanceiro from "../ScreenFinanceiro";
 import ScreenLogin from "../ScreenLogin";
+import ScreenMeusDependentes from "../ScreenMeusDependentes";
 import "./styles.scss";
 
 export default function Content() {
-  const { refScreenLogin, refScreenFinanceiro, refScreenEscolhaPerfilLogin } =
-    useSettingsContext();
+  const {
+    refScreenLogin,
+    refScreenFinanceiro,
+    refScreenEscolhaPerfilLogin,
+    refScreenMeusDependentes,
+  } = useSettingsContext();
 
   return (
     <div className="content-container">
@@ -57,6 +61,21 @@ export default function Content() {
                 exportAsImage(
                   refScreenEscolhaPerfilLogin.current,
                   "screenEscolhaPerfilLogin"
+                )
+              }
+            />
+          </div>
+        </div>
+        <div>
+          <ScreenMeusDependentes />
+          <div style={{ marginTop: "1em" }}>
+            <Button
+              title="Baixar"
+              subTitle="720 x 1553"
+              onPress={() =>
+                exportAsImage(
+                  refScreenMeusDependentes.current,
+                  "screenMeusDependentes"
                 )
               }
             />

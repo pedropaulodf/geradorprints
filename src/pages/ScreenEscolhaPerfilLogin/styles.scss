@@ -17,14 +17,54 @@
   overflow: hidden;
 
   .screen-container {
-    .list-container {
-      margin: 0 1.3em;
+    padding: 0em 1em;
+
+    .perfil-warning {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      gap: 0.5em;
+      width: 100%;
+      margin: 0 auto;
+
+      background-color: #c7ca05;
+      border-radius: 1.4em;
+      padding: 2.8em 1.4em;
+      box-shadow: 0px 10px 20px 0px #00000030;
+      box-sizing: border-box;
+      margin-top: 7em;
+      margin-bottom: 1.8em;
+
+      .warning-text {
+        text-align: center;
+
+        p {
+          font-size: 1.5em;
+          color: #000000;
+          line-height: 1.2em;
+        }
+      }
     }
     .bottom-left-arrow {
       position: absolute;
       left: 1em;
-      bottom: 2em;
+      bottom: 4em;
       background-color: var(--color-secondary);
+      // padding: 2em;
+      border-radius: 60em;
+      box-shadow: 0px 10px 20px 0px #00000030;
+
+      width: 7em;
+      height: 7em;
+      max-width: 7em;
+      max-height: 7em;
+      min-width: 7em;
+      min-height: 7em;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
     }
   }
 }

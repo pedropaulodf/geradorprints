@@ -7,11 +7,22 @@ import "./styles.scss";
 
 type AppHeaderProps = {
   title: string;
+  onlyAppBar?: boolean;
 };
 
-export default function AppHeader({ title }: AppHeaderProps) {
+export default function AppHeader({
+  title,
+  onlyAppBar = false,
+}: AppHeaderProps) {
   return (
-    <div className="appheader-container">
+    <div
+      className="appheader-container"
+      style={{
+        height: onlyAppBar ? "6em" : "11.8em",
+        background: onlyAppBar ? "rgba(0,0,0,0)" : "#ffffff",
+        boxShadow: onlyAppBar ? "none" : "0px 0px 20px 4px rgba(0, 0, 0, 0.38)",
+      }}
+    >
       <div className="top-strip">
         <div>
           <p className="time">09:55</p>
@@ -26,17 +37,19 @@ export default function AppHeader({ title }: AppHeaderProps) {
           </p>
         </div>
       </div>
-      <div className="bottom-strip">
-        <div className="menu-icon-box">
-          <img src={menuArrowIconSVG} alt="Menu icon" />
+      {!onlyAppBar && (
+        <div className="bottom-strip">
+          <div className="menu-icon-box">
+            <img src={menuArrowIconSVG} alt="Menu icon" />
+          </div>
+          <div>
+            <p>{title}</p>
+          </div>
+          <div className="logo-box">
+            <img src={logo_cab} alt="Logo header" />
+          </div>
         </div>
-        <div>
-          <p>{title}</p>
-        </div>
-        <div className="logo-box">
-          <img src={logo_cab} alt="Logo header" />
-        </div>
-      </div>
+      )}
     </div>
   );
 }

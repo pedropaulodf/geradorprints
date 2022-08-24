@@ -4,6 +4,7 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { IoAlertCircleOutline } from "react-icons/io5";
 
 import "./styles.scss";
+import CardProfile from "../../components/CardProfile";
 
 const LISTA_PERFIS = [
   {
@@ -47,11 +48,11 @@ export default function ScreenEscolhaPerfilLogin() {
       ref={refScreenEscolhaPerfilLogin}
     >
       <div className="screen-container">
-        <div>
+        <div className="perfil-warning">
           <div>
-            <IoAlertCircleOutline size={22} color="#000000" />
+            <IoAlertCircleOutline size={60} color="#000000" />
           </div>
-          <div>
+          <div className="warning-text">
             <p>
               Detectamos mais de um perfil para o mesmo CPF.
               <br />
@@ -59,25 +60,25 @@ export default function ScreenEscolhaPerfilLogin() {
             </p>
           </div>
         </div>
-        <div className="list-container">
+        <div>
           {LISTA_PERFIS.map((item) => (
-            <div key={item.key}>
-              <div>
-                <img src={item.imgUrl} alt={`${item.name} photo`} />
-              </div>
-              <div>{item.name}</div>
-              <div>
+            <CardProfile
+              key={item.key}
+              data={item}
+              iconComponent={
                 <FaArrowRight
-                  size={22}
+                  size={46}
                   style={{ color: "var(--color-secondary)" }}
                 />
-              </div>
-            </div>
+              }
+            />
           ))}
         </div>
 
         <div className="bottom-left-arrow">
-          <FaArrowLeft size={22} color="#ffffff" />
+          <div>
+            <FaArrowLeft size={50} color="#ffffff" />
+          </div>
         </div>
       </div>
 

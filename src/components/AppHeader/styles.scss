@@ -1,10 +1,10 @@
 .appheader-container {
   width: var(--screen-print-width);
-  height: 11.8em;
   padding: 1.4em;
-  background: #ffffff;
   box-sizing: border-box;
-  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.38);
+  // box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.38);
+  // height: 11.8em;
+  // background: #ffffff;
 
   .top-strip {
     display: flex;

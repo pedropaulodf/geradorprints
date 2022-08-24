@@ -21,6 +21,7 @@ type PropsSettingsContext = {
   refScreenLogin: any;
   refScreenFinanceiro: any;
   refScreenEscolhaPerfilLogin: any;
+  refScreenMeusDependentes: any;
 };
 
 const SettingsContext = createContext<PropsSettingsContext>(
@@ -33,6 +34,7 @@ export const SettingsContextProvider: React.FC<{
   const refScreenLogin = useRef<any>();
   const refScreenFinanceiro = useRef<any>();
   const refScreenEscolhaPerfilLogin = useRef<any>();
+  const refScreenMeusDependentes = useRef<any>();
 
   const [colorPrimary, setColorPrimary] = useState("#0077bd");
   const [colorSecondary, setColorSecondary] = useState("#ed3237");
@@ -56,6 +58,7 @@ export const SettingsContextProvider: React.FC<{
         refScreenLogin,
         refScreenFinanceiro,
         refScreenEscolhaPerfilLogin,
+        refScreenMeusDependentes,
       }}
     >
       {children}
