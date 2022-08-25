@@ -1,6 +1,7 @@
 import Button from "../../components/Button";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { exportAsImage } from "../../Utils/utils";
+import ScreenDetalheCobranca from "../ScreenDetalheCobranca";
 import ScreenEscolhaPerfilLogin from "../ScreenEscolhaPerfilLogin";
 import ScreenFinanceiro from "../ScreenFinanceiro";
 import ScreenLogin from "../ScreenLogin";
@@ -13,6 +14,7 @@ export default function Content() {
     refScreenFinanceiro,
     refScreenEscolhaPerfilLogin,
     refScreenMeusDependentes,
+    refScreenDetalheCobranca,
   } = useSettingsContext();
 
   return (
@@ -76,6 +78,21 @@ export default function Content() {
                 exportAsImage(
                   refScreenMeusDependentes.current,
                   "screenMeusDependentes"
+                )
+              }
+            />
+          </div>
+        </div>
+        <div>
+          <ScreenDetalheCobranca />
+          <div style={{ marginTop: "1em" }}>
+            <Button
+              title="Baixar"
+              subTitle="720 x 1553"
+              onPress={() =>
+                exportAsImage(
+                  refScreenDetalheCobranca.current,
+                  "screenDetalheCobranca"
                 )
               }
             />
