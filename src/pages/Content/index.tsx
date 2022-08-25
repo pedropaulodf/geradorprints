@@ -6,6 +6,7 @@ import ScreenDetalheCobranca from "../ScreenDetalheCobranca";
 import ScreenEscolhaPerfilLogin from "../ScreenEscolhaPerfilLogin";
 import ScreenFinanceiro from "../ScreenFinanceiro";
 import ScreenLogin from "../ScreenLogin";
+import ScreenMenuAberto from "../ScreenMenuAberto";
 import ScreenMeusDependentes from "../ScreenMeusDependentes";
 import "./styles.scss";
 
@@ -17,6 +18,7 @@ export default function Content() {
     refScreenMeusDependentes,
     refScreenDetalheCobranca,
     refScreenCarteirinhaDigital,
+    refScreenMenuAberto,
   } = useSettingsContext();
 
   return (
@@ -31,7 +33,7 @@ export default function Content() {
         style={{ zoom: 0.2 }}
       /> */}
       <div className="screens-group-row">
-        <div>
+        {/* <div>
           <ScreenLogin />
           <div style={{ marginTop: "1em" }}>
             <Button
@@ -71,21 +73,6 @@ export default function Content() {
           </div>
         </div>
         <div>
-          <ScreenMeusDependentes />
-          <div style={{ marginTop: "1em" }}>
-            <Button
-              title="Baixar"
-              subTitle="720 x 1553"
-              onPress={() =>
-                exportAsImage(
-                  refScreenMeusDependentes.current,
-                  "screenMeusDependentes"
-                )
-              }
-            />
-          </div>
-        </div>
-        <div>
           <ScreenCarteirinhaDigital />
           <div style={{ marginTop: "1em" }}>
             <Button
@@ -95,6 +82,33 @@ export default function Content() {
                 exportAsImage(
                   refScreenCarteirinhaDigital.current,
                   "screenCarteirinhaDigital"
+                )
+              }
+            />
+          </div>
+        </div> */}
+        <div>
+          <ScreenMenuAberto />
+          <div style={{ marginTop: "1em" }}>
+            <Button
+              title="Baixar"
+              subTitle="720 x 1553"
+              onPress={() =>
+                exportAsImage(refScreenMenuAberto.current, "screenMenuAberto")
+              }
+            />
+          </div>
+        </div>
+        {/* <div>
+          <ScreenMeusDependentes />
+          <div style={{ marginTop: "1em" }}>
+            <Button
+              title="Baixar"
+              subTitle="720 x 1553"
+              onPress={() =>
+                exportAsImage(
+                  refScreenMeusDependentes.current,
+                  "screenMeusDependentes"
                 )
               }
             />
@@ -114,7 +128,7 @@ export default function Content() {
               }
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <hr style={{ margin: "2em 0" }} />
