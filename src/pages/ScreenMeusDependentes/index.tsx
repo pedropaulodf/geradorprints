@@ -5,9 +5,8 @@ import CardProfile from "../../components/CardProfile";
 import AppHeader from "../../components/AppHeader";
 import AppFooter from "../../components/AppFooter";
 
-import qrCodeIconSVG from "../../assets/qr-code.svg";
-import "./styles.scss";
 import QrCodeSvg from "../../assets/svgComponents/QrCodeSvg";
+import "./styles.scss";
 
 const LISTA_PERFIS = [
   // {

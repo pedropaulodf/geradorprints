@@ -55,7 +55,10 @@ export default function ScreenDetalheCobranca() {
 
         <div className="typing-line-container">
           <p>Linha Digitável</p>
-          <input type="text" value="5301080000423820000007811543349040000039" />
+          <input
+            type="text"
+            value="53010800004238200000078115433490400039000"
+          />
           <button type="button">
             <FiCopy color="#ffffff" size={42} />
             Copiar

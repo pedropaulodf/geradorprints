@@ -1,6 +1,7 @@
 import Button from "../../components/Button";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { exportAsImage } from "../../Utils/utils";
+import ScreenCarteirinhaDigital from "../ScreenCarteirinhaDigital";
 import ScreenDetalheCobranca from "../ScreenDetalheCobranca";
 import ScreenEscolhaPerfilLogin from "../ScreenEscolhaPerfilLogin";
 import ScreenFinanceiro from "../ScreenFinanceiro";
@@ -15,6 +16,7 @@ export default function Content() {
     refScreenEscolhaPerfilLogin,
     refScreenMeusDependentes,
     refScreenDetalheCobranca,
+    refScreenCarteirinhaDigital,
   } = useSettingsContext();
 
   return (
@@ -78,6 +80,21 @@ export default function Content() {
                 exportAsImage(
                   refScreenMeusDependentes.current,
                   "screenMeusDependentes"
+                )
+              }
+            />
+          </div>
+        </div>
+        <div>
+          <ScreenCarteirinhaDigital />
+          <div style={{ marginTop: "1em" }}>
+            <Button
+              title="Baixar"
+              subTitle="720 x 1553"
+              onPress={() =>
+                exportAsImage(
+                  refScreenCarteirinhaDigital.current,
+                  "screenCarteirinhaDigital"
                 )
               }
             />
