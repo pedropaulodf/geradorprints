@@ -32,7 +32,7 @@ export default function ScreenCarteirinhaDigital() {
           <div className="modal-content">
             <div className="user-info-box">
               <div>
-                <img src="/user.png" alt="User photo" />
+                <img src="/user-female.png" alt="User photo" />
               </div>
               <div>
                 <input type="text" value="Lais" onChange={() => {}} />

@@ -63,7 +63,7 @@ export default function ScreenMenuAberto() {
               }}
             ></div>
             <div>
-              <img src="/user.png" alt="User photo" />
+              <img src="/user-female.png" alt="User photo" />
               <input type="text" value="Lais" onChange={() => {}} />
             </div>
           </div>

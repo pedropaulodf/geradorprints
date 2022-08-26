@@ -11,32 +11,32 @@ import "./styles.scss";
 const LISTA_PERFIS = [
   // {
   //   key: 1,
-  //   imgUrl: "/user.png",
+  //   imgUrl: "/user-female.png",
   //   name: "Lais",
   // },
   {
     key: 2,
-    imgUrl: "/user.png",
+    imgUrl: "/user-male.png",
     name: "Chris",
   },
   {
     key: 3,
-    imgUrl: "/user.png",
+    imgUrl: "/user-male.png",
     name: "Davi",
   },
   {
     key: 4,
-    imgUrl: "/user.png",
+    imgUrl: "/user-male.png",
     name: "Theo",
   },
   {
     key: 5,
-    imgUrl: "/user.png",
+    imgUrl: "/user-female.png",
     name: "Elisa",
   },
   // {
   //   key: 6,
-  //   imgUrl: "/user.png",
+  //   imgUrl: "/user-male.png",
   //   name: "Pedro",
   // },
 ];
