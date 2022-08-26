@@ -1,6 +1,6 @@
 # Gerador de Prints
 <p align="center">
-  <img alt="Print do projeto" src=".github/print.png" width="100%">
+  <img alt="Print do projeto" src=".github/print.gif" width="100%">
 </p>
 
 ## ➡️ Sobre 
