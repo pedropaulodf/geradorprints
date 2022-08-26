@@ -1,5 +1,5 @@
-import IphoneBottomLine from "../../components/IphoneBottomLine";
-import { useSettingsContext } from "../../contexts/useSettingsContext";
+import IphoneBottomLine from "../../../components/IphoneBottomLine";
+import { useSettingsContext } from "../../../contexts/useSettingsContext";
 
 import "./styles.scss";
 

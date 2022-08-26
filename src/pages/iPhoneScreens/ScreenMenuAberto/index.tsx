@@ -1,6 +1,6 @@
-import IphoneBottomLine from "../../components/IphoneBottomLine";
-import { useSettingsContext } from "../../contexts/useSettingsContext";
-import AppFooter from "../../components/AppFooter";
+import IphoneBottomLine from "../../../components/IphoneBottomLine";
+import { useSettingsContext } from "../../../contexts/useSettingsContext";
+import AppFooter from "../../../components/AppFooter";
 import ScreenFinanceiro from "../ScreenFinanceiro";
 import { BsPersonPlus } from "react-icons/bs";
 import { HiUser } from "react-icons/hi";

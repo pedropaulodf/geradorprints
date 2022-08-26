@@ -1,11 +1,11 @@
-import IphoneBottomLine from "../../components/IphoneBottomLine";
-import { useSettingsContext } from "../../contexts/useSettingsContext";
+import IphoneBottomLine from "../../../components/IphoneBottomLine";
+import { useSettingsContext } from "../../../contexts/useSettingsContext";
 
-import CardProfile from "../../components/CardProfile";
-import AppHeader from "../../components/AppHeader";
-import AppFooter from "../../components/AppFooter";
+import CardProfile from "../../../components/CardProfile";
+import AppHeader from "../../../components/AppHeader";
+import AppFooter from "../../../components/AppFooter";
 
-import QrCodeSvg from "../../assets/svgComponents/QrCodeSvg";
+import QrCodeSvg from "../../../assets/svgComponents/QrCodeSvg";
 import "./styles.scss";
 
 const LISTA_PERFIS = [

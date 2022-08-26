@@ -1,12 +1,12 @@
-import IphoneBottomLine from "../../components/IphoneBottomLine";
-import { useSettingsContext } from "../../contexts/useSettingsContext";
+import IphoneBottomLine from "../../../components/IphoneBottomLine";
+import { useSettingsContext } from "../../../contexts/useSettingsContext";
 import { FiArrowRight } from "react-icons/fi";
 
-import AppHeader from "../../components/AppHeader";
+import AppHeader from "../../../components/AppHeader";
 
-import qrCodeQualitySVG from "../../assets/qrcode-qualitysys.svg";
-import counterCicle1SVG from "../../assets/counter-circle1.svg";
-import counterCicle2SVG from "../../assets/counter-circle2.svg";
+import qrCodeQualitySVG from "../../../assets/qrcode-qualitysys.svg";
+import counterCicle1SVG from "../../../assets/counter-circle1.svg";
+import counterCicle2SVG from "../../../assets/counter-circle2.svg";
 import "./styles.scss";
 
 export default function ScreenCarteirinhaDigital() {

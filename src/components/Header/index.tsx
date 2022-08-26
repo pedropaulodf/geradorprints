@@ -36,6 +36,8 @@ export default function Header() {
   };
 
   const downloadAllPrints = () => {
+    // downloadIPhonePrints();
+    // downloadIPadPrints();
     alert("Baixar Todos");
   };
 

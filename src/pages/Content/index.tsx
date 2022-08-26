@@ -1,13 +1,13 @@
 import Button from "../../components/Button";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { exportAsImage } from "../../Utils/utils";
-import ScreenCarteirinhaDigital from "../ScreenCarteirinhaDigital";
-import ScreenDetalheCobranca from "../ScreenDetalheCobranca";
-import ScreenEscolhaPerfilLogin from "../ScreenEscolhaPerfilLogin";
-import ScreenFinanceiro from "../ScreenFinanceiro";
-import ScreenLogin from "../ScreenLogin";
-import ScreenMenuAberto from "../ScreenMenuAberto";
-import ScreenMeusDependentes from "../ScreenMeusDependentes";
+import ScreenCarteirinhaDigital from "../iPhoneScreens/ScreenCarteirinhaDigital";
+import ScreenDetalheCobranca from "../iPhoneScreens/ScreenDetalheCobranca";
+import ScreenEscolhaPerfilLogin from "../iPhoneScreens/ScreenEscolhaPerfilLogin";
+import ScreenFinanceiro from "../iPhoneScreens/ScreenFinanceiro";
+import ScreenLogin from "../iPhoneScreens/ScreenLogin";
+import ScreenMenuAberto from "../iPhoneScreens/ScreenMenuAberto";
+import ScreenMeusDependentes from "../iPhoneScreens/ScreenMeusDependentes";
 import "./styles.scss";
 
 export default function Content() {

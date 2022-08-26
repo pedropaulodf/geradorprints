@@ -1,9 +1,9 @@
-import AppHeader from "../../components/AppHeader";
-import IphoneBottomLine from "../../components/IphoneBottomLine";
-import { useSettingsContext } from "../../contexts/useSettingsContext";
+import AppHeader from "../../../components/AppHeader";
+import IphoneBottomLine from "../../../components/IphoneBottomLine";
+import { useSettingsContext } from "../../../contexts/useSettingsContext";
 import { FiCopy, FiX } from "react-icons/fi";
 
-import bancoUniCredLogoSvg from "../../assets/banco-unicred.svg";
+import bancoUniCredLogoSvg from "../../../assets/banco-unicred.svg";
 
 import "./styles.scss";
 

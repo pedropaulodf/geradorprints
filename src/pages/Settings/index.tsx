@@ -72,7 +72,13 @@ export default function Settings() {
         <div className="input-container">
           <label className="header-settings-item">
             <span>
-              Fundo App: <span style={{ color: "#3665bd" }}>500x889</span>
+              Fundo App | Login:{" "}
+              <span
+                style={{ color: "#3665bd", cursor: "help" }}
+                title="Tamanho recomendado"
+              >
+                500x889
+              </span>
             </span>
           </label>
           <label>
@@ -103,7 +109,13 @@ export default function Settings() {
         <div className="input-container">
           <label className="header-settings-item">
             <span>
-              Logo App: <span style={{ color: "#3665bd" }}>450x250</span>
+              Logo App | Login:{" "}
+              <span
+                style={{ color: "#3665bd", cursor: "help" }}
+                title="Tamanho recomendado"
+              >
+                450x250
+              </span>
             </span>
           </label>
           <label>
@@ -132,7 +144,13 @@ export default function Settings() {
         <div className="input-container">
           <label className="header-settings-item">
             <span>
-              Fundo Menu: <span style={{ color: "#3665bd" }}>400x200</span>
+              Fundo Menu:{" "}
+              <span
+                style={{ color: "#3665bd", cursor: "help" }}
+                title="Tamanho recomendado"
+              >
+                400x200
+              </span>
             </span>
           </label>
           <label>
@@ -160,8 +178,14 @@ export default function Settings() {
         </div>
         <div className="input-container">
           <label className="header-settings-item">
-            <span className="header-settings-item">
-              Logo Cab: <span style={{ color: "#3665bd" }}>130x130</span>
+            <span>
+              Logo Cab:{" "}
+              <span
+                style={{ color: "#3665bd", cursor: "help" }}
+                title="Tamanho recomendado"
+              >
+                130x130
+              </span>
             </span>
           </label>
           <label>

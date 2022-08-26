@@ -1,10 +1,10 @@
-import IphoneBottomLine from "../../components/IphoneBottomLine";
-import { useSettingsContext } from "../../contexts/useSettingsContext";
+import IphoneBottomLine from "../../../components/IphoneBottomLine";
+import { useSettingsContext } from "../../../contexts/useSettingsContext";
 
 import "./styles.scss";
-import AppHeader from "../../components/AppHeader";
-import AppFooter from "../../components/AppFooter";
-import BoletoCard from "../../components/BoletoCard";
+import AppHeader from "../../../components/AppHeader";
+import AppFooter from "../../../components/AppFooter";
+import BoletoCard from "../../../components/BoletoCard";
 
 const LISTA_BOLETOS = [
   {

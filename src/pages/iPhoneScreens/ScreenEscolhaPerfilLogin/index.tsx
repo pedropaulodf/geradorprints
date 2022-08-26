@@ -1,10 +1,10 @@
-import IphoneBottomLine from "../../components/IphoneBottomLine";
-import { useSettingsContext } from "../../contexts/useSettingsContext";
+import IphoneBottomLine from "../../../components/IphoneBottomLine";
+import { useSettingsContext } from "../../../contexts/useSettingsContext";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { IoAlertCircleOutline } from "react-icons/io5";
+import CardProfile from "../../../components/CardProfile";
 
 import "./styles.scss";
-import CardProfile from "../../components/CardProfile";
 
 const LISTA_PERFIS = [
   {

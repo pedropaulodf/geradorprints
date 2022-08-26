@@ -1,6 +1,6 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import ScreenLogin from "../pages/ScreenLogin";
+import ScreenLogin from "../pages/iPhoneScreens/ScreenLogin";
 
 function Routes() {
   return (
