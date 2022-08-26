@@ -97,9 +97,19 @@ export default function Header() {
           <a
             href="https://github.com/pedropaulodf/geradorprints"
             target="_blank"
+            title="Repositório no Github"
           >
             <div className="git-icon-container">
               <FiGithub color="#333333" size={22} />
+            </div>
+          </a>
+          <a
+            href="https://theapplaunchpad.com/"
+            target="_blank"
+            title="theapplaunchpad.com"
+          >
+            <div className="applaunchpad-icon-container">
+              <p>A</p>
             </div>
           </a>
         </div>
