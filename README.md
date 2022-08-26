@@ -8,7 +8,7 @@ Projeto criado para facilitar o processo de geração de prints para subir os ap
 
 ### Ver projeto: 
 
-[<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">](https://geradorprints.vercel.app/)
+[<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">](https://geradorprints-appstores.vercel.app/)
 
 ## 🚀 Tecnologias 
 -   [x] React.js
