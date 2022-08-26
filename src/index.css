@@ -48,7 +48,7 @@ h3 {
 }
 
 .max-width-container {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 0px 20px;
 }
