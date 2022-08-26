@@ -67,6 +67,7 @@ export default function ScreenLogin() {
             fileFundoAppImg[0] ?? "fundo_app_sample.png"
           })`,
           backgroundSize: "cover",
+          backgroundPositionX: "center",
           filter: `opacity(var(--fundo-app-opacity)) blur(var(--fundo-app-blur)`,
         }}
       ></div>

@@ -60,6 +60,7 @@ export default function ScreenMenuAberto() {
                 })`,
                 backgroundSize: "cover",
                 filter: `opacity(30%)`,
+                backgroundPositionX: "center",
               }}
             ></div>
             <div>
