@@ -1,4 +1,5 @@
 import { FiGithub } from "react-icons/fi";
+import { MdOutlineAddToDrive } from "react-icons/md";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { exportAsImage } from "../../Utils/utils";
 import Button from "../Button";
@@ -99,14 +100,23 @@ export default function Header() {
             target="_blank"
             title="Repositório no Github"
           >
-            <div className="git-icon-container">
+            <div className="header-icon-container">
               <FiGithub color="#333333" size={22} />
+            </div>
+          </a>
+          <a
+            href="https://drive.google.com/drive/folders/1BCGZgXB10ecvARXUlo7m0L9L5PDk_qrg?usp=sharing"
+            target="_blank"
+            title="Pasta de arquivos no Drive"
+          >
+            <div className="header-icon-container">
+              <MdOutlineAddToDrive color="#333333" size={22} />
             </div>
           </a>
           <a
             href="https://theapplaunchpad.com/"
             target="_blank"
-            title="theapplaunchpad.com"
+            title="https://theapplaunchpad.com/"
           >
             <div className="applaunchpad-icon-container">
               <p>A</p>
