@@ -73,13 +73,13 @@ h3 {
   appearance: none;
   width: 25px;
   height: 25px;
-  background: var(--color-secondary);
+  background: #3665bd;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: var(--color-secondary);
+  background: #3665bd;
   cursor: pointer;
 }
