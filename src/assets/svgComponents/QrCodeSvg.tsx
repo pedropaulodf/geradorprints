@@ -21,7 +21,7 @@ export default function QrCodeSvg({
         maxHeight: size,
       }}
     >
-      <g clip-path="url(#clip0_12_166)">
+      <g clipPath="url(#clip0_12_166)">
         <path
           d="M4.38128 3.34618H3.34603V4.38142H4.38128V3.34618Z"
           fill={color}
@@ -42,22 +42,22 @@ export default function QrCodeSvg({
       <path
         d="M1 3V1.5C1 1.25 1.28571 1 1.57143 1C1.85714 1 3 1 3 1"
         stroke={color}
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
       <path
         d="M10.7 3V1.5C10.7 1.25 10.4143 1 10.1286 1C9.84285 1 8.7 1 8.7 1"
         stroke={color}
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
       <path
         d="M1 8.7V10.2C1 10.45 1.28571 10.7 1.57143 10.7C1.85714 10.7 3 10.7 3 10.7"
         stroke={color}
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
       <path
         d="M10.7 8.7V10.2C10.7 10.45 10.4143 10.7 10.1286 10.7C9.84285 10.7 8.7 10.7 8.7 10.7"
         stroke={color}
-        stroke-linecap="round"
+        strokeLinecap="round"
       />
       <defs>
         <clipPath id="clip0_12_166">

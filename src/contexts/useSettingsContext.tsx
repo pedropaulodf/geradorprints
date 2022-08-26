@@ -25,6 +25,14 @@ type PropsSettingsContext = {
   refScreenDetalheCobranca: any;
   refScreenCarteirinhaDigital: any;
   refScreenMenuAberto: any;
+  fileFundoAppImg: string[];
+  setFileFundoAppImg: Dispatch<SetStateAction<string[]>>;
+  fileFundoMenuImg: string[];
+  setFileFundoMenuImg: Dispatch<SetStateAction<string[]>>;
+  fileLogoAppImg: string[];
+  setFileLogoAppImg: Dispatch<SetStateAction<string[]>>;
+  fileLogoCabImg: string[];
+  setFileLogoCabImg: Dispatch<SetStateAction<string[]>>;
 };
 
 const SettingsContext = createContext<PropsSettingsContext>(
@@ -48,6 +56,11 @@ export const SettingsContextProvider: React.FC<{
   const [fundoAppBlur, setFundoAppBlur] = useState(3);
   const [loginBoxOpacity, setloginBoxOpacity] = useState(100);
 
+  const [fileFundoAppImg, setFileFundoAppImg] = useState<string[]>([]);
+  const [fileFundoMenuImg, setFileFundoMenuImg] = useState<string[]>([]);
+  const [fileLogoAppImg, setFileLogoAppImg] = useState<string[]>([]);
+  const [fileLogoCabImg, setFileLogoCabImg] = useState<string[]>([]);
+
   return (
     <SettingsContext.Provider
       value={{
@@ -68,6 +81,14 @@ export const SettingsContextProvider: React.FC<{
         refScreenDetalheCobranca,
         refScreenCarteirinhaDigital,
         refScreenMenuAberto,
+        fileFundoAppImg,
+        setFileFundoAppImg,
+        fileFundoMenuImg,
+        setFileFundoMenuImg,
+        fileLogoAppImg,
+        setFileLogoAppImg,
+        fileLogoCabImg,
+        setFileLogoCabImg,
       }}
     >
       {children}

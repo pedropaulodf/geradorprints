@@ -1,18 +1,20 @@
-import fundo_app from "../../assets/fundo_app.png";
-import logo_app from "../../assets/logo_app.png";
 import IphoneBottomLine from "../../components/IphoneBottomLine";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
 
 import "./styles.scss";
 
 export default function ScreenLogin() {
-  const { colorPrimary, refScreenLogin } = useSettingsContext();
+  const { colorPrimary, refScreenLogin, fileFundoAppImg, fileLogoAppImg } =
+    useSettingsContext();
 
   return (
     <div className="screen-login-container" ref={refScreenLogin}>
       <div className="screen-container">
         <div className="logo">
-          <img src={logo_app} alt="Logo app" />
+          <img
+            src={fileLogoAppImg[0] ?? "/logo_app_sample.png"}
+            alt="Logo app"
+          />
         </div>
         <div className="center-box">
           <div
@@ -61,7 +63,9 @@ export default function ScreenLogin() {
           display: "block",
           position: "absolute",
           height: "100%",
-          backgroundImage: `url(${fundo_app})`,
+          backgroundImage: `url(${
+            fileFundoAppImg[0] ?? "fundo_app_sample.png"
+          })`,
           backgroundSize: "cover",
           filter: `opacity(var(--fundo-app-opacity)) blur(var(--fundo-app-blur)`,
         }}

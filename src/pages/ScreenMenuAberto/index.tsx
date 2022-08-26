@@ -12,7 +12,8 @@ import fundo_menu from "../../assets/fundo_menu.png";
 import "./styles.scss";
 
 export default function ScreenMenuAberto() {
-  const { refScreenMenuAberto, colorSecondary } = useSettingsContext();
+  const { refScreenMenuAberto, colorSecondary, fileFundoMenuImg } =
+    useSettingsContext();
 
   const MenuItem = ({
     text,
@@ -54,14 +55,16 @@ export default function ScreenMenuAberto() {
                 display: "block",
                 position: "absolute",
                 height: "100%",
-                backgroundImage: `url(${fundo_menu})`,
+                backgroundImage: `url(${
+                  fileFundoMenuImg[0] ?? "fundo_menu_sample.png"
+                })`,
                 backgroundSize: "cover",
                 filter: `opacity(30%)`,
               }}
             ></div>
             <div>
               <img src="/user.png" alt="User photo" />
-              <input type="text" value="Lais" />
+              <input type="text" value="Lais" onChange={() => {}} />
             </div>
           </div>
 

@@ -58,6 +58,7 @@ export default function ScreenDetalheCobranca() {
           <input
             type="text"
             value="53010800004238200000078115433490400039000"
+            onChange={() => {}}
           />
           <button type="button">
             <FiCopy color="#ffffff" size={42} />

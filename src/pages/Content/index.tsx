@@ -33,7 +33,7 @@ export default function Content() {
         style={{ zoom: 0.2 }}
       /> */}
       <div className="screens-group-row">
-        {/* <div>
+        <div>
           <ScreenLogin />
           <div style={{ marginTop: "1em" }}>
             <Button
@@ -86,7 +86,7 @@ export default function Content() {
               }
             />
           </div>
-        </div> */}
+        </div>
         <div>
           <ScreenMenuAberto />
           <div style={{ marginTop: "1em" }}>
@@ -99,7 +99,7 @@ export default function Content() {
             />
           </div>
         </div>
-        {/* <div>
+        <div>
           <ScreenMeusDependentes />
           <div style={{ marginTop: "1em" }}>
             <Button
@@ -128,7 +128,7 @@ export default function Content() {
               }
             />
           </div>
-        </div> */}
+        </div>
       </div>
 
       <hr style={{ margin: "2em 0" }} />

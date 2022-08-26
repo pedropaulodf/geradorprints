@@ -78,7 +78,7 @@ export default function ScreenFinanceiro() {
 
         <div className="list-container">
           {LISTA_BOLETOS.map((item) => (
-            <BoletoCard data={item} />
+            <BoletoCard data={item} key={item.key} />
           ))}
         </div>
       </div>

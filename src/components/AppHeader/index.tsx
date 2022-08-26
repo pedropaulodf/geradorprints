@@ -1,9 +1,9 @@
 import { IoIosWifi, IoIosBatteryFull } from "react-icons/io";
 
 import menuArrowIconSVG from "../../assets/menu-arrow.svg";
-import logo_cab from "../../assets/logo_cab.png";
 
 import "./styles.scss";
+import { useSettingsContext } from "../../contexts/useSettingsContext";
 
 type AppHeaderProps = {
   title: string;
@@ -14,6 +14,8 @@ export default function AppHeader({
   title,
   onlyAppBar = false,
 }: AppHeaderProps) {
+  const { fileLogoCabImg } = useSettingsContext();
+
   return (
     <div
       className="appheader-container"
@@ -46,7 +48,10 @@ export default function AppHeader({
             <p>{title}</p>
           </div>
           <div className="logo-box">
-            <img src={logo_cab} alt="Logo header" />
+            <img
+              src={fileLogoCabImg[0] ?? "/logo_cab_sample.png"}
+              alt="Logo header"
+            />
           </div>
         </div>
       )}

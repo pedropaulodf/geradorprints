@@ -35,7 +35,7 @@ export default function ScreenCarteirinhaDigital() {
                 <img src="/user.png" alt="User photo" />
               </div>
               <div>
-                <input type="text" value="Lais" />
+                <input type="text" value="Lais" onChange={() => {}} />
               </div>
             </div>
 
