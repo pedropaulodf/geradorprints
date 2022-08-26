@@ -1,9 +1,9 @@
-.appheader-container {
-  width: var(--screen-print-width);
-  padding: 1.4em;
+.appheader-ipad-container {
+  width: var(--screen-ipad-print-width);
+  padding: 0.5em 1em;
   box-sizing: border-box;
   // box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.38);
-  // height: 11.8em;
+  height: 6em;
   // background: #ffffff;
 
   .top-strip {
@@ -14,9 +14,9 @@
 
     p.time {
       font-weight: bold;
-      font-size: 1.9em;
-      color: #000000;
-      margin-left: 0.8em;
+      font-size: 0.8em;
+      color: #ffffff;
+      // margin-left: 0.8em;
     }
 
     .top-right-icons-group {
@@ -25,8 +25,8 @@
       gap: 0.5em;
       margin-top: 0.3em;
 
-      .three-dots {
-        font-size: 2em;
+      .battery-info {
+        font-size: 0.8em;
         font-weight: bold;
         color: #dbdbdb;
         margin-top: -0.3em;
@@ -50,7 +50,7 @@
     }
 
     p {
-      font-size: 2em;
+      font-size: 0.8em;
       color: #000000;
     }
 
@@ -63,7 +63,6 @@
       min-height: 4.3em;
       border: 2px solid #dfdfdf;
       border-radius: 10em;
-      object-fit: contain;
 
       filter: drop-shadow(0px 5px 6px #00000040);
     }

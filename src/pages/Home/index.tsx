@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
-import Content from "../Content";
+import ContentIPad from "../ContentIPad";
+import ContentIPhone from "../ContentIPhone";
 import Settings from "../Settings";
 
 import "./styles.scss";
@@ -13,7 +14,9 @@ export default function Home() {
           <Settings />
         </div>
         <div style={{ maxWidth: "900px" }}>
-          <Content />
+          <ContentIPhone />
+          <hr style={{ marginTop: "2em" }} />
+          <ContentIPad />
         </div>
       </div>
     </div>

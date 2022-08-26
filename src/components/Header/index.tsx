@@ -13,32 +13,78 @@ export default function Header() {
     refScreenDetalheCobranca,
     refScreenCarteirinhaDigital,
     refScreenMenuAberto,
+    refScreenIPadLogin,
+    refScreenIPadFinanceiro,
+    refScreenIPadEscolhaPerfilLogin,
+    refScreenIPadMeusDependentes,
+    refScreenIPadDetalheCobranca,
+    refScreenIPadCarteirinhaDigital,
+    refScreenIPadMenuAberto,
   } = useSettingsContext();
 
   const downloadIPhonePrints = () => {
-    exportAsImage(refScreenLogin.current, "screenLogin");
-    exportAsImage(refScreenFinanceiro.current, "screenFinanceiro");
+    exportAsImage(refScreenLogin.current, "screenLogin", "iphone");
+    exportAsImage(refScreenFinanceiro.current, "screenFinanceiro", "iphone");
     exportAsImage(
       refScreenEscolhaPerfilLogin.current,
-      "screenEscolhaPerfilLogin"
+      "screenEscolhaPerfilLogin",
+      "iphone"
     );
-    exportAsImage(refScreenMeusDependentes.current, "screenMeusDependentes");
-    exportAsImage(refScreenDetalheCobranca.current, "screenDetalheCobranca");
+    exportAsImage(
+      refScreenMeusDependentes.current,
+      "screenMeusDependentes",
+      "iphone"
+    );
+    exportAsImage(
+      refScreenDetalheCobranca.current,
+      "screenDetalheCobranca",
+      "iphone"
+    );
     exportAsImage(
       refScreenCarteirinhaDigital.current,
-      "screenCarteirinhaDigital"
+      "screenCarteirinhaDigital",
+      "iphone"
     );
-    exportAsImage(refScreenMenuAberto.current, "screenMenuAberto");
+    exportAsImage(refScreenMenuAberto.current, "screenMenuAberto", "iphone");
   };
 
   const downloadIPadPrints = () => {
-    alert("Baixar iPad");
+    exportAsImage(refScreenIPadLogin.current, "screenIPadLogin", "ipad");
+    exportAsImage(
+      refScreenIPadFinanceiro.current,
+      "screenIPadFinanceiro",
+      "ipad"
+    );
+    exportAsImage(
+      refScreenIPadEscolhaPerfilLogin.current,
+      "screenIPadEscolhaPerfilLogin",
+      "ipad"
+    );
+    exportAsImage(
+      refScreenIPadMeusDependentes.current,
+      "screenIPadMeusDependentes",
+      "ipad"
+    );
+    exportAsImage(
+      refScreenIPadDetalheCobranca.current,
+      "screenIPadDetalheCobranca",
+      "ipad"
+    );
+    exportAsImage(
+      refScreenIPadCarteirinhaDigital.current,
+      "screenIPadCarteirinhaDigital",
+      "ipad"
+    );
+    exportAsImage(
+      refScreenIPadMenuAberto.current,
+      "screenIPadMenuAberto",
+      "ipad"
+    );
   };
 
   const downloadAllPrints = () => {
-    // downloadIPhonePrints();
-    // downloadIPadPrints();
-    alert("Baixar Todos");
+    downloadIPhonePrints();
+    downloadIPadPrints();
   };
 
   return (

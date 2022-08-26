@@ -1,10 +1,10 @@
 import { SettingsContextProvider } from "./contexts/useSettingsContext";
-import Routes from "./Routes/routes";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <SettingsContextProvider>
-      <Routes />;
+      <Home />;
     </SettingsContextProvider>
   );
 }

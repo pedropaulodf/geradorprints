@@ -1,0 +1,23 @@
+.screen-ipad-carteirinhadigital-container {
+  width: var(--screen-ipad-print-width);
+  height: var(--screen-ipad-print-height);
+
+  background-color: #000000;
+
+  /* border: 1px solid black */
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 4px;
+
+  overflow: hidden;
+
+  .ipad-screen-container {
+    transform: scale(0.57);
+    margin-top: -5em;
+  }
+}

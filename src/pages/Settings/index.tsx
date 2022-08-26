@@ -213,7 +213,7 @@ export default function Settings() {
         </div>
         <div className="input-container">
           <label className="header-settings-item">
-            <span>Cor 1:</span>
+            <span>Cor Primary:</span>
           </label>
           <input
             type="color"
@@ -227,7 +227,7 @@ export default function Settings() {
         </div>
         <div className="input-container">
           <label className="header-settings-item">
-            <span>Cor 2:</span>
+            <span>Cor Secondary:</span>
           </label>
           <input
             type="color"

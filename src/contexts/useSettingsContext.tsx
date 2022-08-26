@@ -33,6 +33,13 @@ type PropsSettingsContext = {
   setFileLogoAppImg: Dispatch<SetStateAction<string[]>>;
   fileLogoCabImg: string[];
   setFileLogoCabImg: Dispatch<SetStateAction<string[]>>;
+  refScreenIPadLogin: any;
+  refScreenIPadFinanceiro: any;
+  refScreenIPadEscolhaPerfilLogin: any;
+  refScreenIPadMeusDependentes: any;
+  refScreenIPadDetalheCobranca: any;
+  refScreenIPadCarteirinhaDigital: any;
+  refScreenIPadMenuAberto: any;
 };
 
 const SettingsContext = createContext<PropsSettingsContext>(
@@ -49,6 +56,14 @@ export const SettingsContextProvider: React.FC<{
   const refScreenDetalheCobranca = useRef<any>();
   const refScreenCarteirinhaDigital = useRef<any>();
   const refScreenMenuAberto = useRef<any>();
+
+  const refScreenIPadLogin = useRef<any>();
+  const refScreenIPadFinanceiro = useRef<any>();
+  const refScreenIPadEscolhaPerfilLogin = useRef<any>();
+  const refScreenIPadMeusDependentes = useRef<any>();
+  const refScreenIPadDetalheCobranca = useRef<any>();
+  const refScreenIPadCarteirinhaDigital = useRef<any>();
+  const refScreenIPadMenuAberto = useRef<any>();
 
   const [colorPrimary, setColorPrimary] = useState("#0077bd");
   const [colorSecondary, setColorSecondary] = useState("#ed3237");
@@ -89,6 +104,13 @@ export const SettingsContextProvider: React.FC<{
         setFileLogoAppImg,
         fileLogoCabImg,
         setFileLogoCabImg,
+        refScreenIPadLogin,
+        refScreenIPadFinanceiro,
+        refScreenIPadEscolhaPerfilLogin,
+        refScreenIPadMeusDependentes,
+        refScreenIPadDetalheCobranca,
+        refScreenIPadCarteirinhaDigital,
+        refScreenIPadMenuAberto,
       }}
     >
       {children}
