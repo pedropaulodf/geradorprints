@@ -57,11 +57,19 @@ const LISTA_BOLETOS = [
   },
 ];
 
-export default function ScreenFinanceiro() {
+type PropsType = {
+  isIpad?: boolean;
+};
+
+export default function ScreenFinanceiro({ isIpad = false }: PropsType) {
   const { refScreenFinanceiro } = useSettingsContext();
 
   return (
-    <div className="screen-financeiro-container" ref={refScreenFinanceiro}>
+    <div
+      className="screen-financeiro-container"
+      ref={refScreenFinanceiro}
+      style={{ borderRadius: isIpad ? ".7em" : "0" }}
+    >
       <div className="screen-container">
         <AppHeader title="Financeiro" />
 
@@ -83,9 +91,9 @@ export default function ScreenFinanceiro() {
         </div>
       </div>
 
-      <AppFooter />
+      <AppFooter isIpad={isIpad} />
 
-      <IphoneBottomLine />
+      {!isIpad && <IphoneBottomLine />}
     </div>
   );
 }

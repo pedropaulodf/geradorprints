@@ -3,12 +3,20 @@ import { useSettingsContext } from "../../../contexts/useSettingsContext";
 
 import "./styles.scss";
 
-export default function ScreenLogin() {
+type PropsType = {
+  isIpad?: boolean;
+};
+
+export default function ScreenLogin({ isIpad = false }: PropsType) {
   const { colorPrimary, refScreenLogin, fileFundoAppImg, fileLogoAppImg } =
     useSettingsContext();
 
   return (
-    <div className="screen-login-container" ref={refScreenLogin}>
+    <div
+      className="screen-login-container"
+      ref={refScreenLogin}
+      style={{ borderRadius: isIpad ? ".7em" : "0" }}
+    >
       <div className="screen-container">
         <div className="logo">
           <img
@@ -53,7 +61,7 @@ export default function ScreenLogin() {
         <p>Desenvolvido por Quality Systems</p>
       </div>
 
-      <IphoneBottomLine />
+      {!isIpad && <IphoneBottomLine />}
 
       <div
         style={{

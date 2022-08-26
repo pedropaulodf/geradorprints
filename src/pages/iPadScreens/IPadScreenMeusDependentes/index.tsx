@@ -15,7 +15,7 @@ export default function IPadScreenMeusDependentes() {
       <AppHeaderIPad />
 
       <div className="ipad-screen-container">
-        <ScreenMeusDependentes />
+        <ScreenMeusDependentes isIpad />
       </div>
 
       <AppFooterIPad />

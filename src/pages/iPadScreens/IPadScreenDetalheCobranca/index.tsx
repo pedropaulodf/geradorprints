@@ -15,7 +15,7 @@ export default function IPadScreenDetalheCobranca() {
       <AppHeaderIPad />
 
       <div className="ipad-screen-container">
-        <ScreenDetalheCobranca />
+        <ScreenDetalheCobranca isIpad />
       </div>
 
       <AppFooterIPad />

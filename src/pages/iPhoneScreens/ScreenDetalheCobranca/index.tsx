@@ -7,13 +7,18 @@ import bancoUniCredLogoSvg from "../../../assets/banco-unicred.svg";
 
 import "./styles.scss";
 
-export default function ScreenDetalheCobranca() {
+type PropsType = {
+  isIpad?: boolean;
+};
+
+export default function ScreenDetalheCobranca({ isIpad = false }: PropsType) {
   const { refScreenDetalheCobranca } = useSettingsContext();
 
   return (
     <div
       className="screen-detalhecobranca-container"
       ref={refScreenDetalheCobranca}
+      style={{ borderRadius: isIpad ? ".7em" : "0" }}
     >
       <AppHeader title="" onlyAppBar />
       <div className="screen-container">
@@ -66,7 +71,7 @@ export default function ScreenDetalheCobranca() {
           </button>
         </div>
       </div>
-      <IphoneBottomLine />
+      {!isIpad && <IphoneBottomLine />}
     </div>
   );
 }

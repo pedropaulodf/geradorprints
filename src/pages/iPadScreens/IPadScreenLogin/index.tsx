@@ -15,7 +15,7 @@ export default function IPadScreenLogin() {
       <AppHeaderIPad />
 
       <div className="ipad-screen-container">
-        <ScreenLogin />
+        <ScreenLogin isIpad />
       </div>
 
       <AppFooterIPad />

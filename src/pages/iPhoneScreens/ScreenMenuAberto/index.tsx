@@ -11,7 +11,11 @@ import fundo_menu from "../../assets/fundo_menu.png";
 
 import "./styles.scss";
 
-export default function ScreenMenuAberto() {
+type PropsType = {
+  isIpad?: boolean;
+};
+
+export default function ScreenMenuAberto({ isIpad = false }: PropsType) {
   const { refScreenMenuAberto, colorSecondary, fileFundoMenuImg } =
     useSettingsContext();
 
@@ -40,7 +44,11 @@ export default function ScreenMenuAberto() {
   };
 
   return (
-    <div className="screen-menuaberto-container" ref={refScreenMenuAberto}>
+    <div
+      className="screen-menuaberto-container"
+      ref={refScreenMenuAberto}
+      style={{ borderRadius: isIpad ? ".7em" : "0" }}
+    >
       <div className="screen-container">
         <div className="bg-overlay"></div>
 
@@ -103,8 +111,8 @@ export default function ScreenMenuAberto() {
 
       <div className="footer-menu-aberto">
         <p className="time">09:55</p>
-        <AppFooter />
-        <IphoneBottomLine />
+        <AppFooter isIpad={isIpad} />
+        {!isIpad && <IphoneBottomLine />}
       </div>
     </div>
   );

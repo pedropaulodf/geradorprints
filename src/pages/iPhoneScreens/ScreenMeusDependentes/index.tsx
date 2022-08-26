@@ -41,13 +41,18 @@ const LISTA_PERFIS = [
   // },
 ];
 
-export default function ScreenMeusDependentes() {
+type PropsType = {
+  isIpad?: boolean;
+};
+
+export default function ScreenMeusDependentes({ isIpad = false }: PropsType) {
   const { refScreenMeusDependentes, colorSecondary } = useSettingsContext();
 
   return (
     <div
       className="screen-meusdependentes-container"
       ref={refScreenMeusDependentes}
+      style={{ borderRadius: isIpad ? ".7em" : "0" }}
     >
       <div className="screen-container">
         <AppHeader title="Meus Dependentes" />
@@ -63,8 +68,8 @@ export default function ScreenMeusDependentes() {
         </div>
       </div>
 
-      <AppFooter />
-      <IphoneBottomLine />
+      <AppFooter isIpad={isIpad} />
+      {!isIpad && <IphoneBottomLine />}
     </div>
   );
 }

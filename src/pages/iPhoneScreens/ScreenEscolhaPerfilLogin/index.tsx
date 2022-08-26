@@ -39,13 +39,20 @@ const LISTA_PERFIS = [
   },
 ];
 
-export default function ScreenEscolhaPerfilLogin() {
+type PropsType = {
+  isIpad?: boolean;
+};
+
+export default function ScreenEscolhaPerfilLogin({
+  isIpad = false,
+}: PropsType) {
   const { refScreenEscolhaPerfilLogin } = useSettingsContext();
 
   return (
     <div
       className="screen-escolhaperfil-container"
       ref={refScreenEscolhaPerfilLogin}
+      style={{ borderRadius: isIpad ? ".7em" : "0" }}
     >
       <div className="screen-container">
         <div className="perfil-warning">
@@ -82,7 +89,7 @@ export default function ScreenEscolhaPerfilLogin() {
         </div>
       </div>
 
-      <IphoneBottomLine />
+      {!isIpad && <IphoneBottomLine />}
     </div>
   );
 }

@@ -15,7 +15,7 @@ export default function IPadScreenMenuAberto() {
       <AppHeaderIPad />
 
       <div className="ipad-screen-container">
-        <ScreenMenuAberto />
+        <ScreenMenuAberto isIpad />
       </div>
 
       <AppFooterIPad />

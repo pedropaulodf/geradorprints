@@ -15,7 +15,7 @@ export default function IPadScreenEscolhaPerfilLogin() {
       <AppHeaderIPad />
 
       <div className="ipad-screen-container">
-        <ScreenEscolhaPerfilLogin />
+        <ScreenEscolhaPerfilLogin isIpad />
       </div>
 
       <AppFooterIPad />

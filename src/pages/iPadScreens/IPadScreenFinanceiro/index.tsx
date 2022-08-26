@@ -15,7 +15,7 @@ export default function IPadScreenFinanceiro() {
       <AppHeaderIPad />
 
       <div className="ipad-screen-container">
-        <ScreenFinanceiro />
+        <ScreenFinanceiro isIpad />
       </div>
 
       <AppFooterIPad />

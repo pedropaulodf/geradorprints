@@ -15,7 +15,7 @@ export default function IPadScreenCateirinhaDigital() {
       <AppHeaderIPad />
 
       <div className="ipad-screen-container">
-        <ScreenCarteirinhaDigital />
+        <ScreenCarteirinhaDigital isIpad />
       </div>
 
       <AppFooterIPad />

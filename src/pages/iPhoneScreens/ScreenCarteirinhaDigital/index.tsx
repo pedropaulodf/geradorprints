@@ -9,13 +9,20 @@ import counterCicle1SVG from "../../../assets/counter-circle1.svg";
 import counterCicle2SVG from "../../../assets/counter-circle2.svg";
 import "./styles.scss";
 
-export default function ScreenCarteirinhaDigital() {
+type PropsType = {
+  isIpad?: boolean;
+};
+
+export default function ScreenCarteirinhaDigital({
+  isIpad = false,
+}: PropsType) {
   const { refScreenCarteirinhaDigital } = useSettingsContext();
 
   return (
     <div
       className="screen-carteirinhadigital-container"
       ref={refScreenCarteirinhaDigital}
+      style={{ borderRadius: isIpad ? ".7em" : "0" }}
     >
       <div className="screen-container">
         <div className="bg-overlay"></div>
@@ -55,7 +62,7 @@ export default function ScreenCarteirinhaDigital() {
         </div>
       </div>
 
-      <IphoneBottomLine />
+      {!isIpad && <IphoneBottomLine />}
     </div>
   );
 }
