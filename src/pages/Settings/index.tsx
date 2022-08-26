@@ -257,6 +257,7 @@ export default function Settings() {
             min="0"
             max="100"
             step="1"
+            className="slider"
           />
         </div>
         <div className="input-container">
@@ -277,6 +278,7 @@ export default function Settings() {
             min="0"
             max="10"
             defaultValue="3" // mesmo que o --fundo-app-blur
+            className="slider"
           />
         </div>
         <div className="input-container">
@@ -297,6 +299,7 @@ export default function Settings() {
             min="0"
             max="100"
             step="1"
+            className="slider"
           />
         </div>
       </div>
