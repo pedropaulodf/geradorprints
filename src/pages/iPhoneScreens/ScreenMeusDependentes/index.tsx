@@ -52,7 +52,7 @@ export default function ScreenMeusDependentes({ isIpad = false }: PropsType) {
     <div
       className="screen-meusdependentes-container"
       ref={refScreenMeusDependentes}
-      style={{ borderRadius: isIpad ? ".7em" : "0" }}
+      style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
         <AppHeader title="Meus Dependentes" />

@@ -47,7 +47,7 @@ export default function ScreenMenuAberto({ isIpad = false }: PropsType) {
     <div
       className="screen-menuaberto-container"
       ref={refScreenMenuAberto}
-      style={{ borderRadius: isIpad ? ".7em" : "0" }}
+      style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
         <div className="bg-overlay"></div>

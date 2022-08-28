@@ -15,7 +15,7 @@ export default function ScreenLogin({ isIpad = false }: PropsType) {
     <div
       className="screen-login-container"
       ref={refScreenLogin}
-      style={{ borderRadius: isIpad ? ".7em" : "0" }}
+      style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
         <div className="logo">

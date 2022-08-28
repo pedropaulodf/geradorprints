@@ -22,7 +22,7 @@ export default function ScreenCarteirinhaDigital({
     <div
       className="screen-carteirinhadigital-container"
       ref={refScreenCarteirinhaDigital}
-      style={{ borderRadius: isIpad ? ".7em" : "0" }}
+      style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
         <div className="bg-overlay"></div>

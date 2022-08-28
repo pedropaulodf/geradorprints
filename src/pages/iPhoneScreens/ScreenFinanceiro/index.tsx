@@ -68,7 +68,7 @@ export default function ScreenFinanceiro({ isIpad = false }: PropsType) {
     <div
       className="screen-financeiro-container"
       ref={refScreenFinanceiro}
-      style={{ borderRadius: isIpad ? ".7em" : "0" }}
+      style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
         <AppHeader title="Financeiro" />

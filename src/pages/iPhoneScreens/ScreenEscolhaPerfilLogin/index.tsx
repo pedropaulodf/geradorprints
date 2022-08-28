@@ -52,7 +52,7 @@ export default function ScreenEscolhaPerfilLogin({
     <div
       className="screen-escolhaperfil-container"
       ref={refScreenEscolhaPerfilLogin}
-      style={{ borderRadius: isIpad ? ".7em" : "0" }}
+      style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
         <div className="perfil-warning">

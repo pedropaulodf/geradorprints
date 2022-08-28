@@ -18,7 +18,7 @@ export default function ScreenDetalheCobranca({ isIpad = false }: PropsType) {
     <div
       className="screen-detalhecobranca-container"
       ref={refScreenDetalheCobranca}
-      style={{ borderRadius: isIpad ? ".7em" : "0" }}
+      style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <AppHeader title="" onlyAppBar />
       <div className="screen-container">
