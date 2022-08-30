@@ -62,6 +62,97 @@ export default function Settings() {
       <div>
         <div className="input-container">
           <label className="header-settings-item">
+            <span>Cor Primary:</span>
+          </label>
+          <input
+            type="color"
+            onChange={(evt) => {
+              const { value } = evt.target;
+              changeRootVarAtribute(value, "--color-primary");
+              setColorPrimary(value);
+            }}
+            defaultValue="#0077bd"
+          />
+        </div>
+        <div className="input-container">
+          <label className="header-settings-item">
+            <span>Cor Secondary:</span>
+          </label>
+          <input
+            type="color"
+            onChange={(evt) => {
+              const { value } = evt.target;
+              changeRootVarAtribute(value, "--color-secondary");
+              setColorSecondary(value);
+            }}
+            defaultValue="#ed3237"
+          />
+        </div>
+        <div className="input-container">
+          <label className="header-settings-item">
+            <span>
+              Fundo App OPACITY:{" "}
+              <span className="span-detail">{fundoAppOpacity}%</span>
+            </span>
+          </label>
+          <input
+            type="range"
+            onChange={(evt) => {
+              const { value } = evt.target;
+              changeRootVarAtribute(`${value}%`, "--fundo-app-opacity");
+              setFundoAppOpacity(parseInt(value));
+            }}
+            defaultValue="70"
+            min="0"
+            max="100"
+            step="1"
+            className="slider"
+          />
+        </div>
+        <div className="input-container">
+          <label className="header-settings-item">
+            <span>
+              Fundo App BLUR:{" "}
+              <span className="span-detail">{fundoAppBlur}px</span>
+            </span>
+          </label>
+          <input
+            type="range"
+            onChange={(evt) => {
+              const { value } = evt.target;
+              changeRootVarAtribute(`${value}px`, "--fundo-app-blur");
+              setFundoAppBlur(parseInt(value));
+            }}
+            step="1"
+            min="0"
+            max="10"
+            defaultValue="3" // mesmo que o --fundo-app-blur
+            className="slider"
+          />
+        </div>
+        <div className="input-container">
+          <label className="header-settings-item">
+            <span>
+              Login box OPACITY:{" "}
+              <span className="span-detail">{loginBoxOpacity}%</span>
+            </span>
+          </label>
+          <input
+            type="range"
+            onChange={(evt) => {
+              const { value } = evt.target;
+              changeRootVarAtribute(`${value}%`, "--box-login-opacity");
+              setloginBoxOpacity(parseInt(value));
+            }}
+            defaultValue="100"
+            min="0"
+            max="100"
+            step="1"
+            className="slider"
+          />
+        </div>
+        <div className="input-container">
+          <label className="header-settings-item">
             <span>
               Fundo App | Login:{" "}
               <span
@@ -201,97 +292,6 @@ export default function Settings() {
               />
             );
           })}
-        </div>
-        <div className="input-container">
-          <label className="header-settings-item">
-            <span>Cor Primary:</span>
-          </label>
-          <input
-            type="color"
-            onChange={(evt) => {
-              const { value } = evt.target;
-              changeRootVarAtribute(value, "--color-primary");
-              setColorPrimary(value);
-            }}
-            defaultValue="#0077bd"
-          />
-        </div>
-        <div className="input-container">
-          <label className="header-settings-item">
-            <span>Cor Secondary:</span>
-          </label>
-          <input
-            type="color"
-            onChange={(evt) => {
-              const { value } = evt.target;
-              changeRootVarAtribute(value, "--color-secondary");
-              setColorSecondary(value);
-            }}
-            defaultValue="#ed3237"
-          />
-        </div>
-        <div className="input-container">
-          <label className="header-settings-item">
-            <span>
-              Fundo App OPACITY:{" "}
-              <span className="span-detail">{fundoAppOpacity}%</span>
-            </span>
-          </label>
-          <input
-            type="range"
-            onChange={(evt) => {
-              const { value } = evt.target;
-              changeRootVarAtribute(`${value}%`, "--fundo-app-opacity");
-              setFundoAppOpacity(parseInt(value));
-            }}
-            defaultValue="70"
-            min="0"
-            max="100"
-            step="1"
-            className="slider"
-          />
-        </div>
-        <div className="input-container">
-          <label className="header-settings-item">
-            <span>
-              Fundo App BLUR:{" "}
-              <span className="span-detail">{fundoAppBlur}px</span>
-            </span>
-          </label>
-          <input
-            type="range"
-            onChange={(evt) => {
-              const { value } = evt.target;
-              changeRootVarAtribute(`${value}px`, "--fundo-app-blur");
-              setFundoAppBlur(parseInt(value));
-            }}
-            step="1"
-            min="0"
-            max="10"
-            defaultValue="3" // mesmo que o --fundo-app-blur
-            className="slider"
-          />
-        </div>
-        <div className="input-container">
-          <label className="header-settings-item">
-            <span>
-              Login box OPACITY:{" "}
-              <span className="span-detail">{loginBoxOpacity}%</span>
-            </span>
-          </label>
-          <input
-            type="range"
-            onChange={(evt) => {
-              const { value } = evt.target;
-              changeRootVarAtribute(`${value}%`, "--box-login-opacity");
-              setloginBoxOpacity(parseInt(value));
-            }}
-            defaultValue="100"
-            min="0"
-            max="100"
-            step="1"
-            className="slider"
-          />
         </div>
       </div>
     </div>
