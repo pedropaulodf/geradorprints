@@ -26,6 +26,22 @@
 
   --screen-ipad-print-width: 1100px;
   --screen-ipad-print-height: 1471px;
+
+  --home-container-content-width-desktop: calc(90vw - 320px);
+  --home-container-content-width-mobile: 90vw;
+
+  --screens-group-row-iphone-scale-desktop: scale(0.3);
+  --screens-group-row-ipad-scale-desktop: scale(0.3);
+
+  --screens-group-row-iphone-margin-desktop: calc(1553px * -0.37)
+    calc(((90vw - 320px) * 3.15) * -0.37);
+  --screens-group-row-iphone-margin-mobile: calc(1553px * -0.37)
+    calc(((90vw - 0px) * 3.15) * -0.37);
+
+  --screens-group-row-ipad-margin-desktop: calc(1553px * -0.35)
+    calc(((90vw - 320px) * 3.15) * -0.37);
+  --screens-group-row-ipad-margin-mobile: calc(1553px * -0.35)
+    calc(((90vw - 0px) * 3.15) * -0.37);
 }
 
 * {

@@ -13,7 +13,7 @@ export default function Home() {
         <div>
           <Settings />
         </div>
-        <div style={{ maxWidth: "calc(90vw - 318px)" }}>
+        <div className="home-container-content">
           <ContentIPhone />
           <hr style={{ marginTop: "2em" }} />
           <ContentIPad />

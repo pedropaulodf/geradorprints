@@ -1,6 +1,7 @@
 import { ChangeEvent } from "react";
-import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { TbFileUpload } from "react-icons/tb";
+import { useSettingsContext } from "../../contexts/useSettingsContext";
+import { changeRootVarAtribute } from "../../Utils/utils";
 import "./styles.scss";
 
 export default function Settings() {
@@ -22,16 +23,6 @@ export default function Settings() {
     fileLogoCabImg,
     setFileLogoCabImg,
   } = useSettingsContext();
-
-  function changeRootVarAtribute(
-    atributeValue: string,
-    rootColorAtributeName: string
-  ) {
-    document.documentElement.style.setProperty(
-      rootColorAtributeName,
-      atributeValue
-    );
-  }
 
   function handleSelectFundoAppImg(
     e: ChangeEvent<HTMLInputElement>,

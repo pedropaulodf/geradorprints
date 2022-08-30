@@ -1,6 +1,7 @@
 import Button from "../../components/Button";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
-import { exportAsImage } from "../../Utils/utils";
+import { changeRootVarAtribute, exportAsImage } from "../../Utils/utils";
+import { BsArrowsAngleContract, BsArrowsAngleExpand } from "react-icons/bs";
 
 import ScreenCarteirinhaDigital from "../iPhoneScreens/ScreenCarteirinhaDigital";
 import ScreenDetalheCobranca from "../iPhoneScreens/ScreenDetalheCobranca";
@@ -23,10 +24,71 @@ export default function ContentIPhone() {
     refScreenMenuAberto,
   } = useSettingsContext();
 
+  function smallSizeDisposition() {
+    // changeRootVarAtribute(
+    //   "calc(90vw - 320px)",
+    //   "--home-container-content-width-desktop"
+    // );
+    // changeRootVarAtribute("90vw", "--home-container-content-width-mobile");
+
+    changeRootVarAtribute(
+      "scale(0.3)",
+      "--screens-group-row-iphone-scale-desktop"
+    );
+    changeRootVarAtribute(
+      "scale(0.3)",
+      "--screens-group-row-ipad-scale-desktop"
+    );
+
+    changeRootVarAtribute(
+      "calc(1553px * -0.37) calc(((90vw - 320px) * 3.15) * -0.37)",
+      "--screens-group-row-iphone-margin-desktop"
+    );
+    changeRootVarAtribute(
+      "calc(1553px * -0.37)    calc(((90vw - 0px) * 3.15) * -0.37)",
+      "--screens-group-row-iphone-margin-mobile"
+    );
+
+    changeRootVarAtribute(
+      "calc(1553px * -0.35) calc(((90vw - 320px) * 3.15) * -0.37)",
+      "--screens-group-row-ipad-margin-desktop"
+    );
+    changeRootVarAtribute(
+      "calc(1553px * -0.35) calc(((90vw - 0px) * 3.15) * -0.37)",
+      "--screens-group-row-ipad-margin-mobile"
+    );
+  }
+
+  function bigSizeDisposition() {
+    // changeRootVarAtribute(
+    //   "calc(90vw - 320px)",
+    //   "--home-container-content-width-desktop"
+    // );
+    // changeRootVarAtribute("90vw", "--home-container-content-width-mobile");
+
+    changeRootVarAtribute("none", "--screens-group-row-iphone-scale-desktop");
+    changeRootVarAtribute("none", "--screens-group-row-ipad-scale-desktop");
+    changeRootVarAtribute("0 0", "--screens-group-row-iphone-margin-desktop");
+    changeRootVarAtribute("0 0", "--screens-group-row-iphone-margin-mobile");
+
+    changeRootVarAtribute("0 0", "--screens-group-row-ipad-margin-desktop");
+    changeRootVarAtribute("0 0", "--screens-group-row-ipad-margin-mobile");
+  }
+
   return (
     <div className="content-container">
-      <h3>iPhone:</h3>
-      <div className="screens-group-row">
+      <div className="flexdirection-row">
+        <h3>iPhone:</h3>
+        <div className="small-big-buttons-container">
+          <button type="button" onClick={() => smallSizeDisposition()}>
+            <BsArrowsAngleContract color="#ffffff" size={15} />
+          </button>
+          <button type="button" onClick={() => bigSizeDisposition()}>
+            <BsArrowsAngleExpand color="#ffffff" size={15} />
+          </button>
+        </div>
+      </div>
+      <div className="screens-group-row-iphone">
         <div>
           <ScreenLogin />
           <div style={{ marginTop: "1em" }}>

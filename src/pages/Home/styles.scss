@@ -3,11 +3,19 @@
   grid-template-columns: 300px 1fr;
   gap: 20px;
   z-index: 1;
+
+  .home-container-content {
+    max-width: var(--home-container-content-width-desktop);
+  }
 }
 
 @media screen and (max-width: 501px) {
   .home-container {
     grid-template-columns: 1fr;
     gap: 20px;
+
+    .home-container-content {
+      max-width: var(--home-container-content-width-mobile);
+    }
   }
 }

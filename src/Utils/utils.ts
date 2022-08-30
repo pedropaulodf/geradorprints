@@ -15,3 +15,13 @@ export function exportAsImage(
       saveAs(blob, `${imageFileName}.png`);
     });
 }
+
+export function changeRootVarAtribute(
+  atributeValue: string,
+  rootColorAtributeName: string
+) {
+  document.documentElement.style.setProperty(
+    rootColorAtributeName,
+    atributeValue
+  );
+}

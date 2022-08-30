@@ -1,5 +1,6 @@
 .content-ipad-container {
   padding-top: 30px;
+  height: calc(100vh * 0.6);
 
   /* All elements Scroll Bar */
   ::-webkit-scrollbar {
@@ -21,7 +22,7 @@
   }
 }
 
-.screens-group-row {
+.screens-group-row-ipad {
   overflow-x: scroll;
   // width: calc(900px * 2.4);
   // width: calc(900px * 2.4);
@@ -31,4 +32,13 @@
   gap: 1em;
   padding-bottom: 5px;
   // transform: translateX(((900px * 2.4) * (0.4 - 1))/2) translateY((1553px * (0.4 - 1))/2) scale(0.4);
+
+  transform: var(--screens-group-row-ipad-scale-desktop);
+  margin: var(--screens-group-row-ipad-margin-desktop);
+}
+
+@media screen and (max-width: 501px) {
+  .screens-group-row-ipad {
+    margin: var(--screens-group-row-ipad-margin-mobile);
+  }
 }

@@ -25,7 +25,7 @@ export default function ContentIPad() {
   return (
     <div className="content-ipad-container">
       <h3>iPad:</h3>
-      <div className="screens-group-row">
+      <div className="screens-group-row-ipad">
         <div>
           <IPadScreenLogin />
           <div style={{ marginTop: "1em" }}>
