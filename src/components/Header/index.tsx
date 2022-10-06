@@ -115,15 +115,15 @@ export default function Header() {
                 <MdOutlineAddToDrive color="#333333" size={22} />
               </div>
             </a>
-            <a
-              href="https://broad-jester-c2f.notion.site/Build-iOS-Android-42dc8154d0704797a760b5ed32c1e53e"
+            {/* <a
+              href="#"
               target="_blank"
               title="Tutorial de como subir para as lojas"
             >
               <div className="header-icon-container">
                 <SiNotion color="#333333" size={22} />
               </div>
-            </a>
+            </a> */}
             <a
               href="https://theapplaunchpad.com/"
               target="_blank"
