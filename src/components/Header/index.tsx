@@ -1,5 +1,6 @@
 import { FiGithub } from "react-icons/fi";
 import { MdOutlineAddToDrive } from "react-icons/md";
+import { SiNotion } from "react-icons/si";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { exportAsImage } from "../../Utils/utils";
 import Button from "../Button";
@@ -95,33 +96,44 @@ export default function Header() {
           <div className="logo">
             <p>GERADOR DE PRINTS</p>
           </div>
-          <a
-            href="https://github.com/pedropaulodf/geradorprints"
-            target="_blank"
-            title="Repositório no Github"
-          >
-            <div className="header-icon-container">
-              <FiGithub color="#333333" size={22} />
-            </div>
-          </a>
-          <a
-            href="https://drive.google.com/drive/folders/1BCGZgXB10ecvARXUlo7m0L9L5PDk_qrg?usp=sharing"
-            target="_blank"
-            title="Pasta de arquivos no Drive"
-          >
-            <div className="header-icon-container">
-              <MdOutlineAddToDrive color="#333333" size={22} />
-            </div>
-          </a>
-          <a
-            href="https://theapplaunchpad.com/"
-            target="_blank"
-            title="https://theapplaunchpad.com/"
-          >
-            <div className="applaunchpad-icon-container">
-              <p>A</p>
-            </div>
-          </a>
+          <div className="header-icons-container">
+            <a
+              href="https://github.com/pedropaulodf/geradorprints"
+              target="_blank"
+              title="Repositório no Github"
+            >
+              <div className="header-icon-container">
+                <FiGithub color="#333333" size={22} />
+              </div>
+            </a>
+            <a
+              href="https://drive.google.com/drive/folders/1BCGZgXB10ecvARXUlo7m0L9L5PDk_qrg?usp=sharing"
+              target="_blank"
+              title="Pasta de arquivos no Drive"
+            >
+              <div className="header-icon-container">
+                <MdOutlineAddToDrive color="#333333" size={22} />
+              </div>
+            </a>
+            <a
+              href="https://broad-jester-c2f.notion.site/Build-iOS-Android-42dc8154d0704797a760b5ed32c1e53e"
+              target="_blank"
+              title="Tutorial de como subir para as lojas"
+            >
+              <div className="header-icon-container">
+                <SiNotion color="#333333" size={22} />
+              </div>
+            </a>
+            <a
+              href="https://theapplaunchpad.com/"
+              target="_blank"
+              title="https://theapplaunchpad.com/"
+            >
+              <div className="applaunchpad-icon-container">
+                <p>A</p>
+              </div>
+            </a>
+          </div>
         </div>
         <div className="btnSection">
           <Button

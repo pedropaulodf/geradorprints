@@ -20,6 +20,13 @@
       align-items: center;
       gap: 20px;
 
+      .header-icons-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+      }
+
       .logo {
         background-color: #bd0000;
         padding: 10px 16px;
@@ -97,6 +104,15 @@
         gap: 10px;
         flex-direction: column;
         width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 431px) {
+  .header-container {
+    .header-content {
+      .logo-container {
+        flex-direction: column;
       }
     }
   }
