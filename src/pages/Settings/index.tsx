@@ -71,7 +71,7 @@ export default function Settings() {
               changeRootVarAtribute(value, "--color-primary");
               setColorPrimary(value);
             }}
-            defaultValue="#0077bd"
+            defaultValue="#4994CD"
           />
         </div>
         <div className="input-container">
@@ -85,7 +85,7 @@ export default function Settings() {
               changeRootVarAtribute(value, "--color-secondary");
               setColorSecondary(value);
             }}
-            defaultValue="#ed3237"
+            defaultValue="#ED3237"
           />
         </div>
         <div className="input-container">
