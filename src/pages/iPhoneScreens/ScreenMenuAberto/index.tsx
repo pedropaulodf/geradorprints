@@ -1,7 +1,7 @@
 import IphoneBottomLine from "../../../components/IphoneBottomLine";
 import { useSettingsContext } from "../../../contexts/useSettingsContext";
 import AppFooter from "../../../components/AppFooter";
-import ScreenFinanceiro from "../ScreenFinanceiro";
+import ScreenMeusDebitos from "../ScreenMeusDebitos";
 import { BsPersonPlus } from "react-icons/bs";
 import { HiUser } from "react-icons/hi";
 import { IoLockClosedOutline, IoExit } from "react-icons/io5";
@@ -87,7 +87,7 @@ export default function ScreenMenuAberto({ isIpad = false }: PropsType) {
               iconComponent={<IoLockClosedOutline color="#333333" size={50} />}
             />
             <MenuItem
-              text="Financeiro"
+              text="MeusDebitos"
               iconComponent={<FaRegMoneyBillAlt color="#333333" size={50} />}
               isSelected
             />
@@ -106,7 +106,7 @@ export default function ScreenMenuAberto({ isIpad = false }: PropsType) {
           </div>
         </div>
 
-        <ScreenFinanceiro />
+        <ScreenMeusDebitos />
       </div>
 
       <div className="footer-menu-aberto">

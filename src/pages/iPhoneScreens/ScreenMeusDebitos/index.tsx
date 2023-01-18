@@ -77,13 +77,13 @@ type PropsType = {
   isIpad?: boolean;
 };
 
-export default function ScreenFinanceiro({ isIpad = false }: PropsType) {
-  const { refScreenFinanceiro } = useSettingsContext();
+export default function ScreenMeusDebitos({ isIpad = false }: PropsType) {
+  const { refScreenMeusDebitos } = useSettingsContext();
 
   return (
     <div
       className="screen-financeiro-container"
-      ref={refScreenFinanceiro}
+      ref={refScreenMeusDebitos}
       style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
