@@ -4,56 +4,72 @@ import { useSettingsContext } from "../../../contexts/useSettingsContext";
 import "./styles.scss";
 import AppHeader from "../../../components/AppHeader";
 import AppFooter from "../../../components/AppFooter";
-import BoletoCard from "../../../components/BoletoCard";
+import BoletoCard, { BoletoCardItemType } from "../../../components/BoletoCard";
 
-const LISTA_BOLETOS = [
+const LISTA_BOLETOS: BoletoCardItemType[] = [
   {
     key: 1,
-    data: "10/07/2022",
+    data: `10/07/${new Date().getFullYear()}`,
     valor: "R$ 390,00",
-    pago: false,
+    emAberto: true,
+    descricao: "MENSALIDADE",
+    aVencer: false,
   },
   {
     key: 2,
-    data: "10/08/2022",
-    valor: "R$ 390,00",
-    pago: true,
+    data: `10/07/${new Date().getFullYear()}`,
+    valor: "R$ 125,00",
+    emAberto: true,
+    descricao: "Quitação de venda pós-paga",
+    aVencer: false,
   },
   {
     key: 3,
-    data: "10/09/2022",
+    data: `10/07/${new Date().getFullYear()}`,
     valor: "R$ 390,00",
-    pago: true,
+    emAberto: false,
+    descricao: "TX. DEPENDENTES",
+    aVencer: false,
   },
   {
     key: 4,
-    data: "10/10/2022",
-    valor: "R$ 390,00",
-    pago: true,
+    data: `10/08/${new Date().getFullYear()}`,
+    valor: "R$ 253,33",
+    emAberto: true,
+    descricao: "TX. DEPENDENTES",
+    aVencer: true,
   },
   {
     key: 5,
-    data: "10/11/2022",
+    data: `10/08/${new Date().getFullYear()}`,
     valor: "R$ 390,00",
-    pago: true,
+    emAberto: false,
+    descricao: "MENSALIDADE",
+    aVencer: true,
   },
   {
     key: 6,
-    data: "10/12/2022",
-    valor: "R$ 390,00",
-    pago: true,
+    data: `10/09/${new Date().getFullYear()}`,
+    valor: "R$ 253,33",
+    emAberto: false,
+    descricao: "TX. DEPENDENTES",
+    aVencer: true,
   },
   {
     key: 7,
-    data: "10/01/2023",
+    data: `10/09/${new Date().getFullYear()}`,
     valor: "R$ 390,00",
-    pago: true,
+    emAberto: false,
+    descricao: "MENSALIDADE",
+    aVencer: true,
   },
   {
     key: 8,
-    data: "10/02/2023",
+    data: `10/10/${new Date().getFullYear()}`,
     valor: "R$ 390,00",
-    pago: true,
+    emAberto: false,
+    descricao: "MENSALIDADE",
+    aVencer: true,
   },
 ];
 
@@ -71,15 +87,15 @@ export default function ScreenFinanceiro({ isIpad = false }: PropsType) {
       style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
-        <AppHeader title="Financeiro" />
+        <AppHeader title="Meus Débitos" />
 
         <div className="list-header">
           <div></div>
           <div>
-            <p>Vencimento</p>
+            <p>Data / Valor</p>
           </div>
           <div>
-            <p>Valor</p>
+            <p>Descrição</p>
           </div>
           <div></div>
         </div>
