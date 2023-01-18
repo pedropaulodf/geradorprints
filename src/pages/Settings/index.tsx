@@ -71,7 +71,7 @@ export default function Settings() {
               changeRootVarAtribute(value, "--color-primary");
               setColorPrimary(value);
             }}
-            defaultValue="#4994CD"
+            defaultValue="#FFFFFE"
           />
         </div>
         <div className="input-container">
@@ -126,7 +126,7 @@ export default function Settings() {
             step="1"
             min="0"
             max="10"
-            defaultValue="3" // mesmo que o --fundo-app-blur
+            defaultValue="5" // mesmo que o --fundo-app-blur
             className="slider"
           />
         </div>
@@ -144,7 +144,7 @@ export default function Settings() {
               changeRootVarAtribute(`${value}%`, "--box-login-opacity");
               setloginBoxOpacity(parseInt(value));
             }}
-            defaultValue="100"
+            defaultValue="60"
             min="0"
             max="100"
             step="1"

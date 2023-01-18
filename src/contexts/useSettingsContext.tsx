@@ -65,11 +65,11 @@ export const SettingsContextProvider: React.FC<{
   const refScreenIPadCarteirinhaDigital = useRef<any>();
   const refScreenIPadMenuAberto = useRef<any>();
 
-  const [colorPrimary, setColorPrimary] = useState("#4994CD");
+  const [colorPrimary, setColorPrimary] = useState("#FFFFFE");
   const [colorSecondary, setColorSecondary] = useState("#ED3237");
   const [fundoAppOpacity, setFundoAppOpacity] = useState(70);
-  const [fundoAppBlur, setFundoAppBlur] = useState(3);
-  const [loginBoxOpacity, setloginBoxOpacity] = useState(100);
+  const [fundoAppBlur, setFundoAppBlur] = useState(5);
+  const [loginBoxOpacity, setloginBoxOpacity] = useState(60);
 
   const [fileFundoAppImg, setFileFundoAppImg] = useState<string[]>([]);
   const [fileFundoMenuImg, setFileFundoMenuImg] = useState<string[]>([]);
