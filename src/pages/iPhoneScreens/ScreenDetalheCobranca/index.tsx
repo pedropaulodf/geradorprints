@@ -3,7 +3,7 @@ import IphoneBottomLine from "../../../components/IphoneBottomLine";
 import { useSettingsContext } from "../../../contexts/useSettingsContext";
 import { FiCopy, FiX } from "react-icons/fi";
 
-import bancoUniCredLogoSvg from "../../../assets/banco-unicred.svg";
+import bancoVakeLogoSvg from "../../../assets/banco-fake.svg";
 
 import "./styles.scss";
 
@@ -43,18 +43,14 @@ export default function ScreenDetalheCobranca({ isIpad = false }: PropsType) {
           <p className="label">
             <strong>Data de Vencimento:</strong>
           </p>
-          <p className="text">10/07/2022</p>
+          <p className="text">{`10/07/${new Date().getFullYear()}`}</p>
         </div>
         <hr />
         <div className="horizontal-items bank-box">
           <p className="label">
             <strong>Banco Emissor:</strong>
           </p>
-          <img
-            src={bancoUniCredLogoSvg}
-            alt="Banco logo"
-            className="bank-logo"
-          />
+          <img src={bancoVakeLogoSvg} alt="Banco logo" className="bank-logo" />
         </div>
         <hr />
 
