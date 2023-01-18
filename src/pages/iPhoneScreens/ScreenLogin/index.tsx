@@ -38,12 +38,12 @@ export default function ScreenLogin({ isIpad = false }: PropsType) {
                 ",var(--box-login-opacity))",
             }}
           >
-            <div>
+            <div className="input-box">
               <label>CPF</label>
               <input type="text" />
             </div>
-            <div>
-              <label>Senha</label>
+            <div className="input-box">
+              <label>SENHA</label>
               <input type="text" />
             </div>
             <div className="fake-checkbox-field">
@@ -53,7 +53,7 @@ export default function ScreenLogin({ isIpad = false }: PropsType) {
             <button type="button">ENTRAR</button>
           </div>
           <div className="forgot-password">
-            <p>ESQUECI MINHA SENHA</p>
+            <p>Esqueceu sua senha?</p>
           </div>
         </div>
       </div>
