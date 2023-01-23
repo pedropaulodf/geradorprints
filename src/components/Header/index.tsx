@@ -2,7 +2,7 @@ import { FiGithub } from "react-icons/fi";
 import { MdOutlineAddToDrive } from "react-icons/md";
 import { SiNotion } from "react-icons/si";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
-import { exportAsImage } from "../../Utils/utils";
+import { ArrayZipFileType, exportAsImage } from "../../Utils/utils";
 import Button from "../Button";
 import "./styles.scss";
 
@@ -25,63 +25,73 @@ export default function Header() {
   } = useSettingsContext();
 
   const downloadIPhonePrints = () => {
-    exportAsImage(refScreenLogin.current, "screenLogin", "iphone");
-    exportAsImage(refScreenMeusDebitos.current, "screenMeusDebitos", "iphone");
-    exportAsImage(
-      refScreenEscolhaPerfilLogin.current,
-      "screenEscolhaPerfilLogin",
-      "iphone"
-    );
-    exportAsImage(
-      refScreenMeusDependentes.current,
-      "screenMeusDependentes",
-      "iphone"
-    );
-    exportAsImage(
-      refScreenDetalheCobranca.current,
-      "screenDetalheCobranca",
-      "iphone"
-    );
-    exportAsImage(
-      refScreenCarteirinhaDigital.current,
-      "screenCarteirinhaDigital",
-      "iphone"
-    );
-    exportAsImage(refScreenMenuAberto.current, "screenMenuAberto", "iphone");
+    const imagensToZipAndDownload = [
+      {
+        ref: refScreenLogin.current,
+        name: "screenLogin",
+      },
+      {
+        ref: refScreenMeusDebitos.current,
+        name: "screenMeusDebitos",
+      },
+      {
+        ref: refScreenEscolhaPerfilLogin.current,
+        name: "screenEscolhaPerfilLogin",
+      },
+      {
+        ref: refScreenMeusDependentes.current,
+        name: "screenMeusDependentes",
+      },
+      {
+        ref: refScreenDetalheCobranca.current,
+        name: "screenDetalheCobranca",
+      },
+      {
+        ref: refScreenCarteirinhaDigital.current,
+        name: "screenCarteirinhaDigital",
+      },
+      {
+        ref: refScreenMenuAberto.current,
+        name: "screenMenuAberto",
+      },
+    ] as ArrayZipFileType[];
+
+    exportAsImage({ dados: imagensToZipAndDownload, type: "iphone" });
   };
 
   const downloadIPadPrints = () => {
-    exportAsImage(refScreenIPadLogin.current, "screenIPadLogin", "ipad");
-    exportAsImage(
-      refScreenIPadMeusDebitos.current,
-      "screenIPadMeusDebitos",
-      "ipad"
-    );
-    exportAsImage(
-      refScreenIPadEscolhaPerfilLogin.current,
-      "screenIPadEscolhaPerfilLogin",
-      "ipad"
-    );
-    exportAsImage(
-      refScreenIPadMeusDependentes.current,
-      "screenIPadMeusDependentes",
-      "ipad"
-    );
-    exportAsImage(
-      refScreenIPadDetalheCobranca.current,
-      "screenIPadDetalheCobranca",
-      "ipad"
-    );
-    exportAsImage(
-      refScreenIPadCarteirinhaDigital.current,
-      "screenIPadCarteirinhaDigital",
-      "ipad"
-    );
-    exportAsImage(
-      refScreenIPadMenuAberto.current,
-      "screenIPadMenuAberto",
-      "ipad"
-    );
+    const imagensToZipAndDownload = [
+      {
+        ref: refScreenIPadLogin.current,
+        name: "screenIPadLogin",
+      },
+      {
+        ref: refScreenIPadMeusDebitos.current,
+        name: "screenIPadMeusDebitos",
+      },
+      {
+        ref: refScreenIPadEscolhaPerfilLogin.current,
+        name: "screenIPadEscolhaPerfilLogin",
+      },
+      {
+        ref: refScreenIPadMeusDependentes.current,
+        name: "screenIPadMeusDependentes",
+      },
+      {
+        ref: refScreenIPadDetalheCobranca.current,
+        name: "screenIPadDetalheCobranca",
+      },
+      {
+        ref: refScreenIPadCarteirinhaDigital.current,
+        name: "screenIPadCarteirinhaDigital",
+      },
+      {
+        ref: refScreenIPadMenuAberto.current,
+        name: "screenIPadMenuAberto",
+      },
+    ];
+
+    exportAsImage({ dados: imagensToZipAndDownload, type: "ipad" });
   };
 
   const downloadAllPrints = () => {
