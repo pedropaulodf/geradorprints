@@ -26,7 +26,7 @@ const LISTA_BOLETOS: BoletoCardItemType[] = [
   {
     key: 3,
     data: `10/07/${new Date().getFullYear()}`,
-    valor: "R$ 390,00",
+    valor: "R$ 253,33",
     emAberto: false,
     descricao: "TX. DEPENDENTES",
     aVencer: false,
@@ -87,7 +87,7 @@ export default function ScreenMeusDebitos({ isIpad = false }: PropsType) {
       style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
-        <AppHeader title="Meus Débitos" />
+        <AppHeader title="Meus Débitos" onlyHeader={isIpad} />
 
         <div className="list-header">
           <div></div>

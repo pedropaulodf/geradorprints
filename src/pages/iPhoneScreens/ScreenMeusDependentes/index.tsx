@@ -55,7 +55,7 @@ export default function ScreenMeusDependentes({ isIpad = false }: PropsType) {
       style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
-        <AppHeader title="Meus Dependentes" />
+        <AppHeader title="Meus Dependentes" onlyHeader={isIpad} />
 
         <div className="list-container">
           {LISTA_PERFIS.map((item) => (

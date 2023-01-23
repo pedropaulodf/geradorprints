@@ -67,7 +67,7 @@ export default function ScreenEscolhaPerfilLogin({
       ref={refScreenEscolhaPerfilLogin}
       style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
-      <AppHeader title="" onlyAppBar />
+      <AppHeader title="" onlyAppBar onlyHeader={isIpad} />
       <div className="screen-container">
         <div className="perfil-warning">
           <div className="bg-icon">
