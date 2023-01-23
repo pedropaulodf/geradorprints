@@ -30,22 +30,22 @@ const LISTA_PERFIS = [
     titulos: [
       {
         key: 1,
-        imgUrl: "/user-male.png",
-        name: "Davi",
+        imgUrl: "/user-female.png",
+        name: "Lais",
       },
       {
         key: 2,
-        imgUrl: "/user-male.png",
+        imgUrl: "/user-male3.png",
         name: "Theo",
       },
       {
         key: 3,
-        imgUrl: "/user-female.png",
-        name: "Elisa",
+        imgUrl: "/user-male.png",
+        name: "Chris",
       },
       {
         key: 4,
-        imgUrl: "/user-male.png",
+        imgUrl: "/user-male2.png",
         name: "Pedro",
       },
     ],

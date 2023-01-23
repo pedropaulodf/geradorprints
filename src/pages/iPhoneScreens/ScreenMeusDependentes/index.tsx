@@ -21,17 +21,17 @@ const LISTA_PERFIS = [
   },
   {
     key: 3,
-    imgUrl: "/user-male.png",
+    imgUrl: "/user-male2.png",
     name: "Davi",
   },
   {
     key: 4,
-    imgUrl: "/user-male.png",
+    imgUrl: "/user-male3.png",
     name: "Theo",
   },
   {
     key: 5,
-    imgUrl: "/user-female.png",
+    imgUrl: "/user-female2.png",
     name: "Elisa",
   },
   // {
