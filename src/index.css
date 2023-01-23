@@ -26,6 +26,8 @@
 
   --screen-ipad-print-width: 1100px;
   --screen-ipad-print-height: 1471px;
+  
+  --screen-ipad-scale-full: scale(0.9);
 
   --home-container-content-width-desktop: calc(90vw - 320px);
   --home-container-content-width-mobile: 90vw;
@@ -98,4 +100,66 @@ h3 {
   height: 25px;
   background: #3665bd;
   cursor: pointer;
+}
+
+/* Swicth style */
+
+.chkswitch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.chkswitch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.chkslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.chkslider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .chkslider {
+  background-color: #3665bd;
+}
+
+input:focus + .chkslider {
+  box-shadow: 0 0 1px #3665bd;
+}
+
+input:checked + .chkslider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.chkslider.chkround {
+  border-radius: 24px;
+}
+
+.chkslider.chkround:before {
+  border-radius: 50%;
 }

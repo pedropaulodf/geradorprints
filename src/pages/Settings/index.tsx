@@ -22,6 +22,8 @@ export default function Settings() {
     setFileLogoAppImg,
     fileLogoCabImg,
     setFileLogoCabImg,
+    screenIpadFullScale,
+    setScreenIpadFullScale,
   } = useSettingsContext();
 
   function handleSelectFundoAppImg(
@@ -54,6 +56,14 @@ export default function Settings() {
         break;
     }
   }
+
+  const changeIpadScale = () => {
+    changeRootVarAtribute(
+      !screenIpadFullScale ? "scale(0.9)" : "scale(0.57)",
+      "--screen-ipad-scale-full"
+    );
+    setScreenIpadFullScale((prev) => !prev);
+  };
 
   return (
     <div className="settings-container">
@@ -150,6 +160,19 @@ export default function Settings() {
             step="1"
             className="slider"
           />
+        </div>
+        <div className="input-container">
+          <label className="header-settings-item-space-bet">
+            <span>iPad full screen: </span>{" "}
+            <label className="chkswitch">
+              <input
+                type="checkbox"
+                checked={screenIpadFullScale}
+                onChange={() => changeIpadScale()}
+              />
+              <span className="chkslider chkround"></span>
+            </label>
+          </label>
         </div>
         <div className="input-container">
           <label className="header-settings-item">

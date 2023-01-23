@@ -33,6 +33,8 @@ type PropsSettingsContext = {
   setFileLogoAppImg: Dispatch<SetStateAction<string[]>>;
   fileLogoCabImg: string[];
   setFileLogoCabImg: Dispatch<SetStateAction<string[]>>;
+  screenIpadFullScale: boolean;
+  setScreenIpadFullScale: Dispatch<SetStateAction<boolean>>;
   refScreenIPadLogin: any;
   refScreenIPadMeusDebitos: any;
   refScreenIPadEscolhaPerfilLogin: any;
@@ -70,6 +72,7 @@ export const SettingsContextProvider: React.FC<{
   const [fundoAppOpacity, setFundoAppOpacity] = useState(70);
   const [fundoAppBlur, setFundoAppBlur] = useState(5);
   const [loginBoxOpacity, setloginBoxOpacity] = useState(60);
+  const [screenIpadFullScale, setScreenIpadFullScale] = useState(true);
 
   const [fileFundoAppImg, setFileFundoAppImg] = useState<string[]>([]);
   const [fileFundoMenuImg, setFileFundoMenuImg] = useState<string[]>([]);
@@ -111,6 +114,8 @@ export const SettingsContextProvider: React.FC<{
         refScreenIPadDetalheCobranca,
         refScreenIPadCarteirinhaDigital,
         refScreenIPadMenuAberto,
+        screenIpadFullScale,
+        setScreenIpadFullScale,
       }}
     >
       {children}

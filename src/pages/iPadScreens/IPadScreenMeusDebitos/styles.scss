@@ -17,7 +17,7 @@
   overflow: hidden;
 
   .ipad-screen-container {
-    transform: scale(0.57);
+    transform: var(--screen-ipad-scale-full);
     margin-top: -5em;
   }
 }
