@@ -9,6 +9,7 @@ import AppHeader from "../../../components/AppHeader";
 
 const LISTA_PERFIS = [
   {
+    key: 1,
     titulo: "Título 1234 - Contribuinte",
     titulos: [
       {
@@ -24,6 +25,7 @@ const LISTA_PERFIS = [
     ],
   },
   {
+    key: 2,
     titulo: "Título 9876 - Contribuinte",
     titulos: [
       {
@@ -85,6 +87,7 @@ export default function ScreenEscolhaPerfilLogin({
         </div>
         {LISTA_PERFIS.map((item) => (
           <div
+            key={item.key}
             className="titulo-box"
             style={{
               backgroundColor: `${colorSecondary}20`,
