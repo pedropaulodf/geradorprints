@@ -172,11 +172,11 @@ export default function ScreenMenuAberto({ isIpad = false }: PropsType) {
           </div>
         </div>
 
-        <ScreenMeusDebitos />
+        <ScreenMeusDebitos isIpad />
       </div>
 
       <div className="footer-menu-aberto">
-        <p className="time">09:55</p>
+        {!isIpad && <p className="time">09:55</p>}
         <AppFooter isIpad={isIpad} />
         {!isIpad && <IphoneBottomLine />}
       </div>

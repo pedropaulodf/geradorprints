@@ -87,7 +87,7 @@ export default function ScreenMeusDebitos({ isIpad = false }: PropsType) {
       style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
-        <AppHeader title="Meus Débitos" />
+        <AppHeader title="Meus Débitos" onlyHeader={isIpad} />
 
         <div className="list-header">
           <div></div>

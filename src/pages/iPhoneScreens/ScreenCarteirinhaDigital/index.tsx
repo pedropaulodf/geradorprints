@@ -26,7 +26,7 @@ export default function ScreenCarteirinhaDigital({
       <div className="screen-container">
         <div className="bg-overlay"></div>
 
-        <AppHeader title="Acesso Rápido" />
+        <AppHeader title="Acesso Rápido" onlyHeader={isIpad} />
 
         <div className="modal-carteirinha">
           <div className="modal-carteirinha-detail"></div>
