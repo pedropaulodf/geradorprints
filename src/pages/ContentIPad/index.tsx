@@ -4,7 +4,7 @@ import { exportAsImage } from "../../Utils/utils";
 import IPadScreenCateirinhaDigital from "../iPadScreens/IPadScreenCarteirinhaDigital";
 import IPadScreenDetalheCobranca from "../iPadScreens/IPadScreenDetalheCobranca";
 import IPadScreenEscolhaPerfilLogin from "../iPadScreens/IPadScreenEscolhaPerfilLogin";
-import IPadScreenFinanceiro from "../iPadScreens/IPadScreenFinanceiro";
+import IPadScreenMeusDebitos from "../iPadScreens/IPadScreenMeusDebitos";
 import IPadScreenLogin from "../iPadScreens/IPadScreenLogin";
 import IPadScreenMenuAberto from "../iPadScreens/IPadScreenMenuAberto";
 import IPadScreenMeusDependentes from "../iPadScreens/IPadScreenMeusDependentes";
@@ -14,7 +14,7 @@ import "./styles.scss";
 export default function ContentIPad() {
   const {
     refScreenIPadLogin,
-    refScreenIPadFinanceiro,
+    refScreenIPadMeusDebitos,
     refScreenIPadEscolhaPerfilLogin,
     refScreenIPadMeusDependentes,
     refScreenIPadDetalheCobranca,
@@ -43,15 +43,15 @@ export default function ContentIPad() {
           </div>
         </div>
         <div>
-          <IPadScreenFinanceiro />
+          <IPadScreenMeusDebitos />
           <div style={{ marginTop: "1em" }}>
             <Button
               title="Baixar"
               subTitle="1100 x 1471"
               onPress={() =>
                 exportAsImage(
-                  refScreenIPadFinanceiro.current,
-                  "screenIPadFinanceiro",
+                  refScreenIPadMeusDebitos.current,
+                  "screenIPadMeusDebitos",
                   "ipad"
                 )
               }

@@ -14,12 +14,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --color-primary: #4994CD;
+  --color-primary: #FFFFFE;
   --color-secondary: #ed3237;
 
   --fundo-app-opacity: 70%;
-  --fundo-app-blur: 3px;
-  --box-login-opacity: 100%;
+  --fundo-app-blur: 5px;
+  --box-login-opacity: 60%;
 
   --screen-print-width: 720px;
   --screen-print-height: 1553px;

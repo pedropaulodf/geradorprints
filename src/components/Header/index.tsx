@@ -9,14 +9,14 @@ import "./styles.scss";
 export default function Header() {
   const {
     refScreenLogin,
-    refScreenFinanceiro,
+    refScreenMeusDebitos,
     refScreenEscolhaPerfilLogin,
     refScreenMeusDependentes,
     refScreenDetalheCobranca,
     refScreenCarteirinhaDigital,
     refScreenMenuAberto,
     refScreenIPadLogin,
-    refScreenIPadFinanceiro,
+    refScreenIPadMeusDebitos,
     refScreenIPadEscolhaPerfilLogin,
     refScreenIPadMeusDependentes,
     refScreenIPadDetalheCobranca,
@@ -26,7 +26,7 @@ export default function Header() {
 
   const downloadIPhonePrints = () => {
     exportAsImage(refScreenLogin.current, "screenLogin", "iphone");
-    exportAsImage(refScreenFinanceiro.current, "screenFinanceiro", "iphone");
+    exportAsImage(refScreenMeusDebitos.current, "screenMeusDebitos", "iphone");
     exportAsImage(
       refScreenEscolhaPerfilLogin.current,
       "screenEscolhaPerfilLogin",
@@ -53,8 +53,8 @@ export default function Header() {
   const downloadIPadPrints = () => {
     exportAsImage(refScreenIPadLogin.current, "screenIPadLogin", "ipad");
     exportAsImage(
-      refScreenIPadFinanceiro.current,
-      "screenIPadFinanceiro",
+      refScreenIPadMeusDebitos.current,
+      "screenIPadMeusDebitos",
       "ipad"
     );
     exportAsImage(

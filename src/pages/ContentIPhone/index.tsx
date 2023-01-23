@@ -6,7 +6,7 @@ import { BsArrowsAngleContract, BsArrowsAngleExpand } from "react-icons/bs";
 import ScreenCarteirinhaDigital from "../iPhoneScreens/ScreenCarteirinhaDigital";
 import ScreenDetalheCobranca from "../iPhoneScreens/ScreenDetalheCobranca";
 import ScreenEscolhaPerfilLogin from "../iPhoneScreens/ScreenEscolhaPerfilLogin";
-import ScreenFinanceiro from "../iPhoneScreens/ScreenFinanceiro";
+import ScreenMeusDebitos from "../iPhoneScreens/ScreenMeusDebitos";
 import ScreenLogin from "../iPhoneScreens/ScreenLogin";
 import ScreenMenuAberto from "../iPhoneScreens/ScreenMenuAberto";
 import ScreenMeusDependentes from "../iPhoneScreens/ScreenMeusDependentes";
@@ -16,7 +16,7 @@ import "./styles.scss";
 export default function ContentIPhone() {
   const {
     refScreenLogin,
-    refScreenFinanceiro,
+    refScreenMeusDebitos,
     refScreenEscolhaPerfilLogin,
     refScreenMeusDependentes,
     refScreenDetalheCobranca,
@@ -102,15 +102,15 @@ export default function ContentIPhone() {
           </div>
         </div>
         <div>
-          <ScreenFinanceiro />
+          <ScreenMeusDebitos />
           <div style={{ marginTop: "1em" }}>
             <Button
               title="Baixar"
               subTitle="720 x 1553"
               onPress={() =>
                 exportAsImage(
-                  refScreenFinanceiro.current,
-                  "screenFinanceiro",
+                  refScreenMeusDebitos.current,
+                  "screenMeusDebitos",
                   "iphone"
                 )
               }

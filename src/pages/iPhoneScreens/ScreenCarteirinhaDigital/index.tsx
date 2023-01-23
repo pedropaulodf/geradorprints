@@ -1,12 +1,11 @@
 import IphoneBottomLine from "../../../components/IphoneBottomLine";
 import { useSettingsContext } from "../../../contexts/useSettingsContext";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiX } from "react-icons/fi";
 
 import AppHeader from "../../../components/AppHeader";
 
 import qrCodeQualitySVG from "../../../assets/qrcode-qualitysys.svg";
-import counterCicle1SVG from "../../../assets/counter-circle1.svg";
-import counterCicle2SVG from "../../../assets/counter-circle2.svg";
+import qrCodeWithCounter from "../../../assets/qrcode-with-counter.svg";
 import "./styles.scss";
 
 type PropsType = {
@@ -16,7 +15,7 @@ type PropsType = {
 export default function ScreenCarteirinhaDigital({
   isIpad = false,
 }: PropsType) {
-  const { refScreenCarteirinhaDigital } = useSettingsContext();
+  const { refScreenCarteirinhaDigital, colorSecondary } = useSettingsContext();
 
   return (
     <div
@@ -27,13 +26,16 @@ export default function ScreenCarteirinhaDigital({
       <div className="screen-container">
         <div className="bg-overlay"></div>
 
-        <AppHeader title="" onlyAppBar />
+        <AppHeader title="Acesso Rápido" />
 
         <div className="modal-carteirinha">
           <div className="modal-carteirinha-detail"></div>
 
           <div className="modal-header-container">
             <p>Carteirinha Digital</p>
+            <div className="close-icon-box">
+              <FiX size={50} color="#696969" />
+            </div>
           </div>
 
           <div className="modal-content">
@@ -41,22 +43,30 @@ export default function ScreenCarteirinhaDigital({
               <div>
                 <img src="/user-female.png" alt="User photo" />
               </div>
-              <div>
-                <input type="text" value="Lais" onChange={() => {}} />
+              <p className="user-name">Lais</p>
+              <p className="user-type">Titular</p>
+              <div
+                className="user-categoria-box"
+                style={{
+                  backgroundColor: `${colorSecondary}99`,
+                }}
+              >
+                <p className="user-categoria">Contribuinte</p>
               </div>
             </div>
-
+            <div className="qrcode-valid-time-text">
+              <p>
+                Válido por <strong>00:52</strong>
+              </p>
+            </div>
             <div className="qrcode-section">
-              <img src={qrCodeQualitySVG} alt="QR Code image" />
-              <div className="left-arrow">
-                <div>
-                  <FiArrowRight size={63} color="#ffffff" />
-                </div>
-              </div>
+              <img src={qrCodeWithCounter} alt="QR Code image" />
             </div>
 
-            <div className="countdown-timer">
-              <img src={counterCicle2SVG} alt="Counter" />
+            <div className="left-arrow">
+              <div>
+                <FiArrowRight size={50} color="#ffffff" />
+              </div>
             </div>
           </div>
         </div>

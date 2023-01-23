@@ -19,7 +19,7 @@ type PropsSettingsContext = {
   loginBoxOpacity: number;
   setloginBoxOpacity: Dispatch<SetStateAction<number>>;
   refScreenLogin: any;
-  refScreenFinanceiro: any;
+  refScreenMeusDebitos: any;
   refScreenEscolhaPerfilLogin: any;
   refScreenMeusDependentes: any;
   refScreenDetalheCobranca: any;
@@ -34,7 +34,7 @@ type PropsSettingsContext = {
   fileLogoCabImg: string[];
   setFileLogoCabImg: Dispatch<SetStateAction<string[]>>;
   refScreenIPadLogin: any;
-  refScreenIPadFinanceiro: any;
+  refScreenIPadMeusDebitos: any;
   refScreenIPadEscolhaPerfilLogin: any;
   refScreenIPadMeusDependentes: any;
   refScreenIPadDetalheCobranca: any;
@@ -50,7 +50,7 @@ export const SettingsContextProvider: React.FC<{
   children: React.ReactNode;
 }> = ({ children }) => {
   const refScreenLogin = useRef<any>();
-  const refScreenFinanceiro = useRef<any>();
+  const refScreenMeusDebitos = useRef<any>();
   const refScreenEscolhaPerfilLogin = useRef<any>();
   const refScreenMeusDependentes = useRef<any>();
   const refScreenDetalheCobranca = useRef<any>();
@@ -58,18 +58,18 @@ export const SettingsContextProvider: React.FC<{
   const refScreenMenuAberto = useRef<any>();
 
   const refScreenIPadLogin = useRef<any>();
-  const refScreenIPadFinanceiro = useRef<any>();
+  const refScreenIPadMeusDebitos = useRef<any>();
   const refScreenIPadEscolhaPerfilLogin = useRef<any>();
   const refScreenIPadMeusDependentes = useRef<any>();
   const refScreenIPadDetalheCobranca = useRef<any>();
   const refScreenIPadCarteirinhaDigital = useRef<any>();
   const refScreenIPadMenuAberto = useRef<any>();
 
-  const [colorPrimary, setColorPrimary] = useState("#4994CD");
+  const [colorPrimary, setColorPrimary] = useState("#FFFFFE");
   const [colorSecondary, setColorSecondary] = useState("#ED3237");
   const [fundoAppOpacity, setFundoAppOpacity] = useState(70);
-  const [fundoAppBlur, setFundoAppBlur] = useState(3);
-  const [loginBoxOpacity, setloginBoxOpacity] = useState(100);
+  const [fundoAppBlur, setFundoAppBlur] = useState(5);
+  const [loginBoxOpacity, setloginBoxOpacity] = useState(60);
 
   const [fileFundoAppImg, setFileFundoAppImg] = useState<string[]>([]);
   const [fileFundoMenuImg, setFileFundoMenuImg] = useState<string[]>([]);
@@ -90,7 +90,7 @@ export const SettingsContextProvider: React.FC<{
         loginBoxOpacity,
         setloginBoxOpacity,
         refScreenLogin,
-        refScreenFinanceiro,
+        refScreenMeusDebitos,
         refScreenEscolhaPerfilLogin,
         refScreenMeusDependentes,
         refScreenDetalheCobranca,
@@ -105,7 +105,7 @@ export const SettingsContextProvider: React.FC<{
         fileLogoCabImg,
         setFileLogoCabImg,
         refScreenIPadLogin,
-        refScreenIPadFinanceiro,
+        refScreenIPadMeusDebitos,
         refScreenIPadEscolhaPerfilLogin,
         refScreenIPadMeusDependentes,
         refScreenIPadDetalheCobranca,

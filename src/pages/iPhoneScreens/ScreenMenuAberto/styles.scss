@@ -46,6 +46,8 @@
           right: 2em; // mesmo que o padding do top-menu-content
           left: 2em; // mesmo que o padding do top-menu-content
           gap: 1.2em;
+          justify-content: center;
+          align-items: center;
 
           img {
             width: 10.3em;
@@ -59,46 +61,27 @@
           }
 
           input {
-            background-color: #ffffff90;
-            border-radius: 20em;
+            background-color: #ffffffbd;
+            border-radius: .2em;
             border: none;
-            color: #00000099;
+            color: #252525;
             font-weight: bold;
-            padding: 0.6em 0.6em 0.6em 5em;
+            padding: 0.6em;
             box-shadow: 0px 6px 10px 5px #00000020;
             font-size: 2em;
             box-sizing: border-box;
             width: 100%;
+            text-align: center;
+            text-transform: uppercase;
           }
         }
       }
 
       .menu-items-list {
         border-bottom: 1px solid #ebebeb;
+        padding-top: .3em;
       }
 
-      .credits-quality {
-        text-align: center;
-        margin: 1em 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        // left: 50%;
-        // transform: translateX(50%);
-        width: 100%;
-        bottom: 8.7em;
-
-        p {
-          width: fit-content;
-          border-radius: 5em;
-          padding: 0.7em 1.8em;
-          color: #ffffff;
-          background-color: #939eb7;
-          font-size: 1.4em;
-          box-shadow: 0px 6px 10px 5px #00000020;
-        }
-      }
     }
   }
 
@@ -125,7 +108,7 @@
   flex-direction: row;
   align-items: center;
 
-  gap: 3em;
+  gap: 1.7em;
 
   margin: 0.6em 1em;
 
@@ -142,8 +125,10 @@
 
   .text {
     p {
-      font-size: 1.6em;
-      color: #4b4b4b;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #747474;
+      letter-spacing: 0.2px;
     }
   }
 }
