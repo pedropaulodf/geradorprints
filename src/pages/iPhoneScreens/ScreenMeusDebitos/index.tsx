@@ -26,7 +26,7 @@ const LISTA_BOLETOS: BoletoCardItemType[] = [
   {
     key: 3,
     data: `10/07/${new Date().getFullYear()}`,
-    valor: "R$ 390,00",
+    valor: "R$ 253,33",
     emAberto: false,
     descricao: "TX. DEPENDENTES",
     aVencer: false,
