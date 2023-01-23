@@ -4,26 +4,27 @@ import { saveAs } from "file-saver";
 
 export type ArrayZipFileTypeProps = {
   dados: ArrayZipFileType[];
-  type: "iphone" | "ipad";
   onlyImage?: boolean;
+  fileNameEnd: "iPhone" | "iPad" | "Todos";
 };
 
 export type ArrayZipFileType = {
   ref: any;
   name: string;
+  deviceType: "iphone" | "ipad";
 };
 
 export function exportAsImage({
   dados,
-  type,
+  fileNameEnd,
   onlyImage = false,
 }: ArrayZipFileTypeProps) {
   if (onlyImage) {
     dados.map((item) => {
       return domtoimage
         .toBlob(item.ref, {
-          width: type === "iphone" ? 720 : 1100,
-          height: type === "iphone" ? 1553 : 1471,
+          width: item.deviceType === "iphone" ? 720 : 1100,
+          height: item.deviceType === "iphone" ? 1553 : 1471,
         })
         .then(function (blob) {
           saveAs(blob, `${item.name}.png`);
@@ -32,20 +33,23 @@ export function exportAsImage({
   } else {
     var zip = new JSZip();
 
-    const teste = dados.map((item) => {
+    const baixarZips = dados.map((item) => {
       return domtoimage
         .toBlob(item.ref, {
-          width: type === "iphone" ? 720 : 1100,
-          height: type === "iphone" ? 1553 : 1471,
+          width: item.deviceType === "iphone" ? 720 : 1100,
+          height: item.deviceType === "iphone" ? 1553 : 1471,
         })
         .then(function (blob) {
           zip.file(`${item.name}.png`, blob);
         });
     });
 
-    Promise.all(teste).then(() => {
+    Promise.all(baixarZips).then(() => {
       zip.generateAsync({ type: "blob" }).then((content) => {
-        saveAs(content, `prints-${type}.zip`);
+        saveAs(
+          content,
+          fileNameEnd ? `prints-${fileNameEnd}.zip` : `prints.zip`
+        );
       });
     });
   }

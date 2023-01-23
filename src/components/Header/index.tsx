@@ -29,34 +29,44 @@ export default function Header() {
       {
         ref: refScreenLogin.current,
         name: "screenLogin",
+        deviceType: "iphone",
       },
       {
         ref: refScreenMeusDebitos.current,
         name: "screenMeusDebitos",
+        deviceType: "iphone",
       },
       {
         ref: refScreenEscolhaPerfilLogin.current,
         name: "screenEscolhaPerfilLogin",
+        deviceType: "iphone",
       },
       {
         ref: refScreenMeusDependentes.current,
         name: "screenMeusDependentes",
+        deviceType: "iphone",
       },
       {
         ref: refScreenDetalheCobranca.current,
         name: "screenDetalheCobranca",
+        deviceType: "iphone",
       },
       {
         ref: refScreenCarteirinhaDigital.current,
         name: "screenCarteirinhaDigital",
+        deviceType: "iphone",
       },
       {
         ref: refScreenMenuAberto.current,
         name: "screenMenuAberto",
+        deviceType: "iphone",
       },
     ] as ArrayZipFileType[];
 
-    exportAsImage({ dados: imagensToZipAndDownload, type: "iphone" });
+    exportAsImage({
+      dados: imagensToZipAndDownload,
+      fileNameEnd: "iPhone",
+    });
   };
 
   const downloadIPadPrints = () => {
@@ -64,39 +74,124 @@ export default function Header() {
       {
         ref: refScreenIPadLogin.current,
         name: "screenIPadLogin",
+        deviceType: "ipad",
       },
       {
         ref: refScreenIPadMeusDebitos.current,
         name: "screenIPadMeusDebitos",
+        deviceType: "ipad",
       },
       {
         ref: refScreenIPadEscolhaPerfilLogin.current,
         name: "screenIPadEscolhaPerfilLogin",
+        deviceType: "ipad",
       },
       {
         ref: refScreenIPadMeusDependentes.current,
         name: "screenIPadMeusDependentes",
+        deviceType: "ipad",
       },
       {
         ref: refScreenIPadDetalheCobranca.current,
         name: "screenIPadDetalheCobranca",
+        deviceType: "ipad",
       },
       {
         ref: refScreenIPadCarteirinhaDigital.current,
         name: "screenIPadCarteirinhaDigital",
+        deviceType: "ipad",
       },
       {
         ref: refScreenIPadMenuAberto.current,
         name: "screenIPadMenuAberto",
+        deviceType: "ipad",
       },
-    ];
+    ] as ArrayZipFileType[];
 
-    exportAsImage({ dados: imagensToZipAndDownload, type: "ipad" });
+    exportAsImage({
+      dados: imagensToZipAndDownload,
+      fileNameEnd: "iPad",
+    });
   };
 
   const downloadAllPrints = () => {
-    downloadIPhonePrints();
-    downloadIPadPrints();
+    const imagensToZipAndDownload = [
+      {
+        ref: refScreenLogin.current,
+        name: "screenLogin",
+        deviceType: "iphone",
+      },
+      {
+        ref: refScreenMeusDebitos.current,
+        name: "screenMeusDebitos",
+        deviceType: "iphone",
+      },
+      {
+        ref: refScreenEscolhaPerfilLogin.current,
+        name: "screenEscolhaPerfilLogin",
+        deviceType: "iphone",
+      },
+      {
+        ref: refScreenMeusDependentes.current,
+        name: "screenMeusDependentes",
+        deviceType: "iphone",
+      },
+      {
+        ref: refScreenDetalheCobranca.current,
+        name: "screenDetalheCobranca",
+        deviceType: "iphone",
+      },
+      {
+        ref: refScreenCarteirinhaDigital.current,
+        name: "screenCarteirinhaDigital",
+        deviceType: "iphone",
+      },
+      {
+        ref: refScreenMenuAberto.current,
+        name: "screenMenuAberto",
+        deviceType: "iphone",
+      },
+      {
+        ref: refScreenIPadLogin.current,
+        name: "screenIPadLogin",
+        deviceType: "ipad",
+      },
+      {
+        ref: refScreenIPadMeusDebitos.current,
+        name: "screenIPadMeusDebitos",
+        deviceType: "ipad",
+      },
+      {
+        ref: refScreenIPadEscolhaPerfilLogin.current,
+        name: "screenIPadEscolhaPerfilLogin",
+        deviceType: "ipad",
+      },
+      {
+        ref: refScreenIPadMeusDependentes.current,
+        name: "screenIPadMeusDependentes",
+        deviceType: "ipad",
+      },
+      {
+        ref: refScreenIPadDetalheCobranca.current,
+        name: "screenIPadDetalheCobranca",
+        deviceType: "ipad",
+      },
+      {
+        ref: refScreenIPadCarteirinhaDigital.current,
+        name: "screenIPadCarteirinhaDigital",
+        deviceType: "ipad",
+      },
+      {
+        ref: refScreenIPadMenuAberto.current,
+        name: "screenIPadMenuAberto",
+        deviceType: "ipad",
+      },
+    ] as ArrayZipFileType[];
+
+    exportAsImage({
+      dados: imagensToZipAndDownload,
+      fileNameEnd: "Todos",
+    });
   };
 
   return (
@@ -147,16 +242,19 @@ export default function Header() {
         </div>
         <div className="btnSection">
           <Button
-            title="Baixar iPhone"
+            title="Baixar iPhone .zip"
             onPress={() => downloadIPhonePrints()}
             bgColor="#0077BD"
           />
           <Button
-            title="Baixar iPad"
+            title="Baixar iPad .zip"
             onPress={() => downloadIPadPrints()}
             bgColor="#815A20"
           />
-          <Button title="Baixar Todos" onPress={() => downloadAllPrints()} />
+          <Button
+            title="Baixar Todos .zip"
+            onPress={() => downloadAllPrints()}
+          />
         </div>
       </div>
     </div>

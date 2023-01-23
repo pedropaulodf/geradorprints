@@ -101,9 +101,10 @@ export default function ContentIPhone() {
                     {
                       ref: refScreenLogin.current,
                       name: "screenLogin",
+                      deviceType: "iphone",
                     },
                   ],
-                  type: "iphone",
+                  fileNameEnd: "iPhone",
                   onlyImage: true,
                 })
               }
@@ -122,9 +123,10 @@ export default function ContentIPhone() {
                     {
                       ref: refScreenMeusDebitos.current,
                       name: "screenMeusDebitos",
+                      deviceType: "iphone",
                     },
                   ],
-                  type: "iphone",
+                  fileNameEnd: "iPhone",
                   onlyImage: true,
                 })
               }
@@ -143,9 +145,10 @@ export default function ContentIPhone() {
                     {
                       ref: refScreenEscolhaPerfilLogin.current,
                       name: "screenEscolhaPerfilLogin",
+                      deviceType: "iphone",
                     },
                   ],
-                  type: "iphone",
+                  fileNameEnd: "iPhone",
                   onlyImage: true,
                 })
               }
@@ -164,9 +167,10 @@ export default function ContentIPhone() {
                     {
                       ref: refScreenCarteirinhaDigital.current,
                       name: "screenCarteirinhaDigital",
+                      deviceType: "iphone",
                     },
                   ],
-                  type: "iphone",
+                  fileNameEnd: "iPhone",
                   onlyImage: true,
                 })
               }
@@ -185,9 +189,10 @@ export default function ContentIPhone() {
                     {
                       ref: refScreenMenuAberto.current,
                       name: "screenMenuAberto",
+                      deviceType: "iphone",
                     },
                   ],
-                  type: "iphone",
+                  fileNameEnd: "iPhone",
                   onlyImage: true,
                 })
               }
@@ -206,9 +211,10 @@ export default function ContentIPhone() {
                     {
                       ref: refScreenMeusDependentes.current,
                       name: "screenMeusDependentes",
+                      deviceType: "iphone",
                     },
                   ],
-                  type: "iphone",
+                  fileNameEnd: "iPhone",
                   onlyImage: true,
                 })
               }
@@ -227,9 +233,10 @@ export default function ContentIPhone() {
                     {
                       ref: refScreenDetalheCobranca.current,
                       name: "screenDetalheCobranca",
+                      deviceType: "iphone",
                     },
                   ],
-                  type: "iphone",
+                  fileNameEnd: "iPhone",
                   onlyImage: true,
                 })
               }

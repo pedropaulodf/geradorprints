@@ -38,9 +38,10 @@ export default function ContentIPad() {
                     {
                       ref: refScreenIPadLogin.current,
                       name: "screenIPadLogin",
+                      deviceType: "ipad",
                     },
                   ],
-                  type: "ipad",
+                  fileNameEnd: "iPad",
                   onlyImage: true,
                 })
               }
@@ -59,9 +60,10 @@ export default function ContentIPad() {
                     {
                       ref: refScreenIPadMeusDebitos.current,
                       name: "screenIPadMeusDebitos",
+                      deviceType: "ipad",
                     },
                   ],
-                  type: "ipad",
+                  fileNameEnd: "iPad",
                   onlyImage: true,
                 })
               }
@@ -80,9 +82,10 @@ export default function ContentIPad() {
                     {
                       ref: refScreenIPadEscolhaPerfilLogin.current,
                       name: "screenIPadEscolhaPerfilLogin",
+                      deviceType: "ipad",
                     },
                   ],
-                  type: "ipad",
+                  fileNameEnd: "iPad",
                   onlyImage: true,
                 })
               }
@@ -101,9 +104,10 @@ export default function ContentIPad() {
                     {
                       ref: refScreenIPadCarteirinhaDigital.current,
                       name: "screenIPadCarteirinhaDigital",
+                      deviceType: "ipad",
                     },
                   ],
-                  type: "ipad",
+                  fileNameEnd: "iPad",
                   onlyImage: true,
                 })
               }
@@ -122,9 +126,10 @@ export default function ContentIPad() {
                     {
                       ref: refScreenIPadMenuAberto.current,
                       name: "screenIPadMenuAberto",
+                      deviceType: "ipad",
                     },
                   ],
-                  type: "ipad",
+                  fileNameEnd: "iPad",
                   onlyImage: true,
                 })
               }
@@ -143,9 +148,10 @@ export default function ContentIPad() {
                     {
                       ref: refScreenIPadMeusDependentes.current,
                       name: "screenIPadMeusDependentes",
+                      deviceType: "ipad",
                     },
                   ],
-                  type: "ipad",
+                  fileNameEnd: "iPad",
                   onlyImage: true,
                 })
               }
@@ -164,9 +170,10 @@ export default function ContentIPad() {
                     {
                       ref: refScreenIPadDetalheCobranca.current,
                       name: "screenIPadDetalheCobranca",
+                      deviceType: "ipad",
                     },
                   ],
-                  type: "ipad",
+                  fileNameEnd: "iPad",
                   onlyImage: true,
                 })
               }
