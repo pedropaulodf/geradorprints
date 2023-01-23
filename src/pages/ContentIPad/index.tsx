@@ -33,11 +33,16 @@ export default function ContentIPad() {
               title="Baixar"
               subTitle="1100 x 1471"
               onPress={() =>
-                exportAsImage(
-                  refScreenIPadLogin.current,
-                  "screenIPadLogin",
-                  "ipad"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenIPadLogin.current,
+                      name: "screenIPadLogin",
+                    },
+                  ],
+                  type: "ipad",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -49,11 +54,16 @@ export default function ContentIPad() {
               title="Baixar"
               subTitle="1100 x 1471"
               onPress={() =>
-                exportAsImage(
-                  refScreenIPadMeusDebitos.current,
-                  "screenIPadMeusDebitos",
-                  "ipad"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenIPadMeusDebitos.current,
+                      name: "screenIPadMeusDebitos",
+                    },
+                  ],
+                  type: "ipad",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -65,11 +75,16 @@ export default function ContentIPad() {
               title="Baixar"
               subTitle="1100 x 1471"
               onPress={() =>
-                exportAsImage(
-                  refScreenIPadEscolhaPerfilLogin.current,
-                  "screenIPadEscolhaPerfilLogin",
-                  "ipad"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenIPadEscolhaPerfilLogin.current,
+                      name: "screenIPadEscolhaPerfilLogin",
+                    },
+                  ],
+                  type: "ipad",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -81,11 +96,16 @@ export default function ContentIPad() {
               title="Baixar"
               subTitle="1100 x 1471"
               onPress={() =>
-                exportAsImage(
-                  refScreenIPadCarteirinhaDigital.current,
-                  "screenIPadCarteirinhaDigital",
-                  "ipad"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenIPadCarteirinhaDigital.current,
+                      name: "screenIPadCarteirinhaDigital",
+                    },
+                  ],
+                  type: "ipad",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -97,11 +117,16 @@ export default function ContentIPad() {
               title="Baixar"
               subTitle="1100 x 1471"
               onPress={() =>
-                exportAsImage(
-                  refScreenIPadMenuAberto.current,
-                  "screenIPadMenuAberto",
-                  "ipad"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenIPadMenuAberto.current,
+                      name: "screenIPadMenuAberto",
+                    },
+                  ],
+                  type: "ipad",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -113,11 +138,16 @@ export default function ContentIPad() {
               title="Baixar"
               subTitle="1100 x 1471"
               onPress={() =>
-                exportAsImage(
-                  refScreenIPadMeusDependentes.current,
-                  "screenIPadMeusDependentes",
-                  "ipad"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenIPadMeusDependentes.current,
+                      name: "screenIPadMeusDependentes",
+                    },
+                  ],
+                  type: "ipad",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -129,11 +159,16 @@ export default function ContentIPad() {
               title="Baixar"
               subTitle="1100 x 1471"
               onPress={() =>
-                exportAsImage(
-                  refScreenIPadDetalheCobranca.current,
-                  "screenIPadDetalheCobranca",
-                  "ipad"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenIPadDetalheCobranca.current,
+                      name: "screenIPadDetalheCobranca",
+                    },
+                  ],
+                  type: "ipad",
+                  onlyImage: true,
+                })
               }
             />
           </div>

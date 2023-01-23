@@ -96,7 +96,16 @@ export default function ContentIPhone() {
               title="Baixar"
               subTitle="720 x 1553"
               onPress={() =>
-                exportAsImage(refScreenLogin.current, "screenLogin", "iphone")
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenLogin.current,
+                      name: "screenLogin",
+                    },
+                  ],
+                  type: "iphone",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -108,11 +117,16 @@ export default function ContentIPhone() {
               title="Baixar"
               subTitle="720 x 1553"
               onPress={() =>
-                exportAsImage(
-                  refScreenMeusDebitos.current,
-                  "screenMeusDebitos",
-                  "iphone"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenMeusDebitos.current,
+                      name: "screenMeusDebitos",
+                    },
+                  ],
+                  type: "iphone",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -124,11 +138,16 @@ export default function ContentIPhone() {
               title="Baixar"
               subTitle="720 x 1553"
               onPress={() =>
-                exportAsImage(
-                  refScreenEscolhaPerfilLogin.current,
-                  "screenEscolhaPerfilLogin",
-                  "iphone"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenEscolhaPerfilLogin.current,
+                      name: "screenEscolhaPerfilLogin",
+                    },
+                  ],
+                  type: "iphone",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -140,11 +159,16 @@ export default function ContentIPhone() {
               title="Baixar"
               subTitle="720 x 1553"
               onPress={() =>
-                exportAsImage(
-                  refScreenCarteirinhaDigital.current,
-                  "screenCarteirinhaDigital",
-                  "iphone"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenCarteirinhaDigital.current,
+                      name: "screenCarteirinhaDigital",
+                    },
+                  ],
+                  type: "iphone",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -156,11 +180,16 @@ export default function ContentIPhone() {
               title="Baixar"
               subTitle="720 x 1553"
               onPress={() =>
-                exportAsImage(
-                  refScreenMenuAberto.current,
-                  "screenMenuAberto",
-                  "iphone"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenMenuAberto.current,
+                      name: "screenMenuAberto",
+                    },
+                  ],
+                  type: "iphone",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -172,11 +201,16 @@ export default function ContentIPhone() {
               title="Baixar"
               subTitle="720 x 1553"
               onPress={() =>
-                exportAsImage(
-                  refScreenMeusDependentes.current,
-                  "screenMeusDependentes",
-                  "iphone"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenMeusDependentes.current,
+                      name: "screenMeusDependentes",
+                    },
+                  ],
+                  type: "iphone",
+                  onlyImage: true,
+                })
               }
             />
           </div>
@@ -188,11 +222,16 @@ export default function ContentIPhone() {
               title="Baixar"
               subTitle="720 x 1553"
               onPress={() =>
-                exportAsImage(
-                  refScreenDetalheCobranca.current,
-                  "screenDetalheCobranca",
-                  "iphone"
-                )
+                exportAsImage({
+                  dados: [
+                    {
+                      ref: refScreenDetalheCobranca.current,
+                      name: "screenDetalheCobranca",
+                    },
+                  ],
+                  type: "iphone",
+                  onlyImage: true,
+                })
               }
             />
           </div>
