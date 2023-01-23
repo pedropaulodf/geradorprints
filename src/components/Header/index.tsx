@@ -242,19 +242,16 @@ export default function Header() {
         </div>
         <div className="btnSection">
           <Button
-            title="Baixar iPhone .zip"
+            title="iPhone .zip"
             onPress={() => downloadIPhonePrints()}
             bgColor="#0077BD"
           />
           <Button
-            title="Baixar iPad .zip"
+            title="iPad .zip"
             onPress={() => downloadIPadPrints()}
             bgColor="#815A20"
           />
-          <Button
-            title="Baixar Todos .zip"
-            onPress={() => downloadAllPrints()}
-          />
+          <Button title="Todos .zip" onPress={() => downloadAllPrints()} />
         </div>
       </div>
     </div>
