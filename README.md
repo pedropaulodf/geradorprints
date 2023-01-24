@@ -17,3 +17,4 @@ Projeto criado para facilitar o processo de geração de prints para subir os ap
 -   [x] file-saver
 -   [x] dom-to-image
 -   [x] vite
+-   [x] jszip
