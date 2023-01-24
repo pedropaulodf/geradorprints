@@ -1,7 +1,7 @@
 import AppFooterIPad from "../../../components/AppFooterIPad";
 import AppHeaderIPad from "../../../components/AppHeaderIPad";
 import { useSettingsContext } from "../../../contexts/useSettingsContext";
-import ScreenEscolhaPerfilLogin from "../../iPhoneScreens/ScreenEscolhaPerfilLogin";
+import ScreenEscolhaPerfilLogin from "../iPhoneScreensCOPIA/ScreenEscolhaPerfilLogin";
 import "./styles.scss";
 
 export default function IPadScreenEscolhaPerfilLogin() {

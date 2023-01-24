@@ -1,11 +1,12 @@
-import IphoneBottomLine from "../../../components/IphoneBottomLine";
-import { useSettingsContext } from "../../../contexts/useSettingsContext";
-
-import AppHeader from "../../../components/AppHeader";
-import AppFooter from "../../../components/AppFooter";
-import BoletoCard, { BoletoCardItemType } from "../../../components/BoletoCard";
+import IphoneBottomLine from "../../../../components/IphoneBottomLine";
+import { useSettingsContext } from "../../../../contexts/useSettingsContext";
 
 import "./styles.scss";
+import AppHeader from "../../../../components/AppHeader";
+import AppFooter from "../../../../components/AppFooter";
+import BoletoCard, {
+  BoletoCardItemType,
+} from "../../../../components/BoletoCard";
 
 const LISTA_BOLETOS: BoletoCardItemType[] = [
   {
@@ -79,16 +80,13 @@ type PropsType = {
 };
 
 export default function ScreenMeusDebitos({ isIpad = false }: PropsType) {
-  const { refScreenMeusDebitos } = useSettingsContext();
-
   return (
     <div
       className="screen-financeiro-container"
-      ref={refScreenMeusDebitos}
       style={{ borderRadius: isIpad ? ".3em" : "0" }}
     >
       <div className="screen-container">
-        <AppHeader title="Meus Débitos" />
+        <AppHeader title="Meus Débitos" onlyHeader={isIpad} />
 
         <div className="list-header">
           <div></div>

@@ -1,7 +1,7 @@
 import AppFooterIPad from "../../../components/AppFooterIPad";
 import AppHeaderIPad from "../../../components/AppHeaderIPad";
 import { useSettingsContext } from "../../../contexts/useSettingsContext";
-import ScreenCarteirinhaDigital from "../../iPhoneScreens/ScreenCarteirinhaDigital";
+import ScreenCarteirinhaDigital from "../iPhoneScreensCOPIA/ScreenCarteirinhaDigital";
 import "./styles.scss";
 
 export default function IPadScreenCateirinhaDigital() {

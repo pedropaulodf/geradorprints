@@ -1,8 +1,7 @@
 import AppFooterIPad from "../../../components/AppFooterIPad";
 import AppHeaderIPad from "../../../components/AppHeaderIPad";
 import { useSettingsContext } from "../../../contexts/useSettingsContext";
-import ScreenMeusDebitos from "../../iPhoneScreens/ScreenMeusDebitos";
-import "./styles.scss";
+import ScreenMeusDebitos from "../iPhoneScreensCOPIA/ScreenMeusDebitos";
 
 export default function IPadScreenMeusDebitos() {
   const { refScreenIPadMeusDebitos } = useSettingsContext();

@@ -1,0 +1,117 @@
+.screen-escolhaperfil-container {
+  width: var(--screen-print-width);
+  height: var(--screen-print-height);
+
+  background-color: #ffffff;
+
+  /* border: 1px solid black */
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 4px;
+
+  overflow: hidden;
+
+  .screen-container {
+    padding: 0em 1em;
+    width: 90%;
+
+    .perfil-warning {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      gap: 0.5em;
+      width: 100%;
+      margin: 0 auto;
+
+      background-color: #c7ca05;
+      border-radius: 1.4em;
+      // padding: 2.8em 1.4em;
+      box-shadow: 0px 10px 20px 0px #00000030;
+      box-sizing: border-box;
+      margin-top: 1em;
+      margin-bottom: 2em;
+
+      .bg-icon {
+        background-color: #00000010;
+        
+        border-top-left-radius: 1.4em;
+        border-bottom-left-radius: 1.4em;
+        width: 5em;
+        height: 100%;
+        padding: 3em 1.5em;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+      }
+
+      .warning-text {
+        width: 100%;
+        padding: 1.4em;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          font-size: 1.8em;
+          color: #000000;
+          line-height: 1.2em;
+        }
+      }
+    }
+
+    .titulo-box {
+      border-radius: 1em;
+      margin-bottom: 1.5em;
+
+      .titulo-title-box{
+        padding: 1.8em 1.5em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        position: relative;
+
+        p{
+          font-size: 1.8em;
+          font-weight: bold;
+          color: #2e2e2e;
+        }
+
+        .icon{
+          position: absolute;
+          top: 1.3em;
+          right: 1.5em;
+        }
+      }
+      .titulo-card-box{
+        padding: 1.8em;
+      }
+    }
+
+    .bottom-left-arrow {
+      position: absolute;
+      left: 1em;
+      bottom: 4em;
+      background-color: var(--color-secondary);
+      // padding: 2em;
+      border-radius: 60em;
+      box-shadow: 0px 10px 20px 0px #00000030;
+
+      width: 7em;
+      height: 7em;
+      max-width: 7em;
+      max-height: 7em;
+      min-width: 7em;
+      min-height: 7em;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+  }
+}

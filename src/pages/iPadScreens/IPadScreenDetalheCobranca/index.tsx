@@ -1,7 +1,7 @@
 import AppFooterIPad from "../../../components/AppFooterIPad";
 import AppHeaderIPad from "../../../components/AppHeaderIPad";
 import { useSettingsContext } from "../../../contexts/useSettingsContext";
-import ScreenDetalheCobranca from "../../iPhoneScreens/ScreenDetalheCobranca";
+import ScreenDetalheCobranca from "../iPhoneScreensCOPIA/ScreenDetalheCobranca";
 import "./styles.scss";
 
 export default function IPadScreenDetalheCobranca() {

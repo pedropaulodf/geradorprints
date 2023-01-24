@@ -1,7 +1,7 @@
 import AppFooterIPad from "../../../components/AppFooterIPad";
 import AppHeaderIPad from "../../../components/AppHeaderIPad";
 import { useSettingsContext } from "../../../contexts/useSettingsContext";
-import ScreenLogin from "../../iPhoneScreens/ScreenLogin";
+import ScreenLogin from "../iPhoneScreensCOPIA/ScreenLogin";
 import "./styles.scss";
 
 export default function IPadScreenLogin() {
