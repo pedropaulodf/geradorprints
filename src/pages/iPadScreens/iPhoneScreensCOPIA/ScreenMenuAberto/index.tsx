@@ -149,7 +149,7 @@ export default function ScreenMenuAberto({ isIpad = false }: PropsType) {
                 })`,
                 backgroundSize: "cover",
                 filter: `opacity(30%)`,
-                backgroundPositionX: "center",
+                backgroundPositionY: "center",
               }}
             ></div>
             <div>
