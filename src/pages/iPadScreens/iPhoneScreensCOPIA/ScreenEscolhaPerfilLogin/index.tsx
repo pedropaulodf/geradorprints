@@ -26,7 +26,7 @@ const LISTA_PERFIS = [
   },
   {
     key: 2,
-    titulo: "Título 9876 - Contribuinte",
+    titulo: "Título 9876 - Funcionário",
     titulos: [
       {
         key: 1,
