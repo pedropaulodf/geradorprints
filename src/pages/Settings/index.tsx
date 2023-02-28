@@ -24,6 +24,7 @@ export default function Settings() {
     setFileLogoCabImg,
     screenIpadFullScale,
     setScreenIpadFullScale,
+    colorSecondary,
   } = useSettingsContext();
 
   function handleSelectFundoAppImg(
@@ -88,15 +89,33 @@ export default function Settings() {
           <label className="header-settings-item">
             <span>Cor Secondary:</span>
           </label>
-          <input
-            type="color"
-            onChange={(evt) => {
-              const { value } = evt.target;
-              changeRootVarAtribute(value, "--color-secondary");
-              setColorSecondary(value);
-            }}
-            defaultValue="#ED3237"
-          />
+          <div className="input-container-sub-group">
+            <button
+              type="button"
+              className="btn-color-2"
+              onClick={() => {
+                changeRootVarAtribute("#ED3237", "--color-secondary");
+                setColorSecondary("#ED3237");
+              }}
+            ></button>
+            <button
+              type="button"
+              className="btn-color-1"
+              onClick={() => {
+                changeRootVarAtribute("#1C3F62", "--color-secondary");
+                setColorSecondary("#1C3F62");
+              }}
+            ></button>
+            <input
+              type="color"
+              onChange={(evt) => {
+                const { value } = evt.target;
+                changeRootVarAtribute(value, "--color-secondary");
+                setColorSecondary(value);
+              }}
+              value={colorSecondary}
+            />
+          </div>
         </div>
         <div className="input-container">
           <label className="header-settings-item">

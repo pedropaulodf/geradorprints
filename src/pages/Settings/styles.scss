@@ -85,6 +85,26 @@
       display: flex;
       justify-content: space-between;
     }
+
+    .input-container-sub-group {
+      display: flex;
+      gap: 0.2em;
+    }
+    .btn-color-1,
+    .btn-color-2 {
+      width: 2em;
+      height: 2em;
+      border: 1px solid #949494;
+      border-radius: 0.2em;
+    }
+
+    .btn-color-1 {
+      background-color: #1c3f62;
+    }
+
+    .btn-color-2 {
+      background-color: #ed3237;
+    }
   }
 }
 
