@@ -92,6 +92,7 @@ export default function Settings() {
               className="selected-color"
               style={{ color: `${colorSecondary}` }}
               onClick={() => copyText(`${colorSecondary}`, true)}
+              title="Clique para copiar"
             >
               {colorSecondary}
             </span>
