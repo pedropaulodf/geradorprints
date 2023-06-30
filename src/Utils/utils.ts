@@ -1,6 +1,8 @@
 import domtoimage from "dom-to-image";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
+import { copy } from "clipboard";
+import { toastSuccess } from "./reactToastfy";
 
 export type ArrayZipFileTypeProps = {
   dados: ArrayZipFileType[];
@@ -64,3 +66,13 @@ export function changeRootVarAtribute(
     atributeValue
   );
 }
+
+export const copyText = (text: string, mostrarTxtCopiadoToast = false) => {
+  // Copia o texto
+  copy(text);
+  if (mostrarTxtCopiadoToast) {
+    toastSuccess(`Copiado! ${text.toUpperCase()}`);
+  } else {
+    toastSuccess("Copiado!");
+  }
+};

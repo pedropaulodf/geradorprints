@@ -1,7 +1,7 @@
 import { ChangeEvent } from "react";
 import { TbFileUpload } from "react-icons/tb";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
-import { changeRootVarAtribute } from "../../Utils/utils";
+import { changeRootVarAtribute, copyText } from "../../Utils/utils";
 import "./styles.scss";
 
 export default function Settings() {
@@ -88,6 +88,13 @@ export default function Settings() {
         <div className="input-container">
           <label className="header-settings-item">
             <span>Cor Secondary:</span>
+            <span
+              className="selected-color"
+              style={{ color: `${colorSecondary}` }}
+              onClick={() => copyText(`${colorSecondary}`, true)}
+            >
+              {colorSecondary}
+            </span>
           </label>
           <div className="input-container-sub-group">
             <button

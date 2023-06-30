@@ -75,6 +75,14 @@
       color: #000000;
       margin: -0.5em;
       margin-bottom: 0.2em;
+
+      display: flex;
+      justify-content: space-between;
+
+      .selected-color {
+        text-transform: uppercase;
+        cursor: pointer;
+      }
     }
 
     .header-settings-item-space-bet {
