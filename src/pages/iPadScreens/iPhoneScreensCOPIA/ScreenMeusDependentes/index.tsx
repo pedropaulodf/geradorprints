@@ -17,7 +17,7 @@ const LISTA_PERFIS = [
   {
     key: 2,
     imgUrl: "/user-male.png",
-    name: "Chris",
+    name: "Cristiano",
   },
   {
     key: 3,
@@ -27,7 +27,7 @@ const LISTA_PERFIS = [
   {
     key: 4,
     imgUrl: "/user-male3.png",
-    name: "Theo",
+    name: "Pedro",
   },
   {
     key: 5,
