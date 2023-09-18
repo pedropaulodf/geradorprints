@@ -1,7 +1,7 @@
 import { FiGithub } from "react-icons/fi";
 import { MdOutlineAddToDrive } from "react-icons/md";
 import { SiNotion } from "react-icons/si";
-import { TbPhotoEdit } from "react-icons/tb";
+import { PhotoEdit } from "react-icons/tb";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { ArrayZipFileType, exportAsImage } from "../../Utils/utils";
 import Button from "../Button";
