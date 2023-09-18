@@ -1,6 +1,7 @@
 import { FiGithub } from "react-icons/fi";
 import { MdOutlineAddToDrive } from "react-icons/md";
 import { SiNotion } from "react-icons/si";
+import { TbPhotoEdit } from "react-icons/tb";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { ArrayZipFileType, exportAsImage } from "../../Utils/utils";
 import Button from "../Button";
@@ -218,6 +219,15 @@ export default function Header() {
             >
               <div className="header-icon-container">
                 <MdOutlineAddToDrive color="#333333" size={22} />
+              </div>
+            </a>
+            <a
+              href="https://editordeimagens-joaopedrobrgs.vercel.app/"
+              target="_blank"
+              title="Editor de Imagens"
+            >
+              <div className="header-icon-container">
+                <TbPhotoEdit color="#333333" size={22} />
               </div>
             </a>
             {/* <a
