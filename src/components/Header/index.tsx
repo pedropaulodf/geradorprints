@@ -1,7 +1,7 @@
 import { FiGithub } from "react-icons/fi";
 import { MdOutlineAddToDrive } from "react-icons/md";
 import { SiNotion } from "react-icons/si";
-import { PhotoEdit } from "react-icons/tb";
+import { ImageEditLine } from "react-icons/ri";
 import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { ArrayZipFileType, exportAsImage } from "../../Utils/utils";
 import Button from "../Button";
@@ -227,7 +227,7 @@ export default function Header() {
               title="Editor de Imagens"
             >
               <div className="header-icon-container">
-                <TbPhotoEdit color="#333333" size={22} />
+                <ImageEditLine color="#333333" size={22} />
               </div>
             </a>
             {/* <a
