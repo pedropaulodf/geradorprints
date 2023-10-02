@@ -53,7 +53,7 @@ export default function ScreenLogin({ isIpad = false }: PropsType) {
             <button type="button">ENTRAR</button>
           </div>
           <div className="forgot-password">
-            <p>Esqueceu sua senha?</p>
+            <p>Recuperar sua senha</p>
           </div>
         </div>
       </div>
