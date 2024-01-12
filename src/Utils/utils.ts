@@ -16,7 +16,7 @@ export type ArrayZipFileType = {
   deviceType: "iphone" | "ipad";
 };
 
-export function exportAsImage({
+export async function exportAsImage({
   dados,
   fileNameEnd,
   onlyImage = false,
@@ -46,7 +46,7 @@ export function exportAsImage({
         });
     });
 
-    Promise.all(baixarZips).then(() => {
+    await Promise.all(baixarZips).then(() => {
       zip.generateAsync({ type: "blob" }).then((content) => {
         saveAs(
           content,

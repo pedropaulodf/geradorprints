@@ -6,6 +6,18 @@ import { useSettingsContext } from "../../contexts/useSettingsContext";
 import { ArrayZipFileType, exportAsImage } from "../../Utils/utils";
 import Button from "../Button";
 import "./styles.scss";
+import { useState } from "react";
+
+export type HeaderButtonStatusType =
+  | "btnIphone"
+  | "btnIpad"
+  | "btnTodos"
+  | undefined;
+
+export type HeaderButtonStatusIsLoading = {
+  isLoading: boolean;
+  btnIsLoading: HeaderButtonStatusType;
+};
 
 export default function Header() {
   const {
@@ -25,7 +37,24 @@ export default function Header() {
     refScreenIPadMenuAberto,
   } = useSettingsContext();
 
-  const downloadIPhonePrints = () => {
+  const [headerButtonIsLoading, setHeaderButtonIsLoading] =
+    useState<HeaderButtonStatusIsLoading>({
+      isLoading: false,
+      btnIsLoading: undefined,
+    });
+
+  const resetHeaderButtonIsLoading = () => {
+    setHeaderButtonIsLoading({
+      isLoading: false,
+      btnIsLoading: undefined,
+    });
+  };
+
+  const downloadIPhonePrints = async () => {
+    setHeaderButtonIsLoading({
+      isLoading: true,
+      btnIsLoading: "btnIphone",
+    });
     const imagensToZipAndDownload = [
       {
         ref: refScreenLogin.current,
@@ -64,13 +93,20 @@ export default function Header() {
       },
     ] as ArrayZipFileType[];
 
-    exportAsImage({
+    await exportAsImage({
       dados: imagensToZipAndDownload,
       fileNameEnd: "iPhone",
     });
+
+    // Reseta os botoes
+    resetHeaderButtonIsLoading();
   };
 
-  const downloadIPadPrints = () => {
+  const downloadIPadPrints = async () => {
+    setHeaderButtonIsLoading({
+      isLoading: true,
+      btnIsLoading: "btnIpad",
+    });
     const imagensToZipAndDownload = [
       {
         ref: refScreenIPadLogin.current,
@@ -109,13 +145,19 @@ export default function Header() {
       },
     ] as ArrayZipFileType[];
 
-    exportAsImage({
+    await exportAsImage({
       dados: imagensToZipAndDownload,
       fileNameEnd: "iPad",
     });
+    // Reseta os botoes
+    resetHeaderButtonIsLoading();
   };
 
-  const downloadAllPrints = () => {
+  const downloadAllPrints = async () => {
+    setHeaderButtonIsLoading({
+      isLoading: true,
+      btnIsLoading: "btnTodos",
+    });
     const imagensToZipAndDownload = [
       {
         ref: refScreenLogin.current,
@@ -189,10 +231,12 @@ export default function Header() {
       },
     ] as ArrayZipFileType[];
 
-    exportAsImage({
+    await exportAsImage({
       dados: imagensToZipAndDownload,
       fileNameEnd: "Todos",
     });
+    // Reseta os botoes
+    resetHeaderButtonIsLoading();
   };
 
   return (
@@ -255,13 +299,22 @@ export default function Header() {
             title="iPhone .zip"
             onPress={() => downloadIPhonePrints()}
             bgColor="#0077BD"
+            headerButtonStatus={headerButtonIsLoading}
+            buttonTipe="btnIphone"
           />
           <Button
             title="iPad .zip"
             onPress={() => downloadIPadPrints()}
             bgColor="#815A20"
+            headerButtonStatus={headerButtonIsLoading}
+            buttonTipe="btnIpad"
           />
-          <Button title="Todos .zip" onPress={() => downloadAllPrints()} />
+          <Button
+            title="Todos .zip"
+            onPress={() => downloadAllPrints()}
+            headerButtonStatus={headerButtonIsLoading}
+            buttonTipe="btnTodos"
+          />
         </div>
       </div>
     </div>
