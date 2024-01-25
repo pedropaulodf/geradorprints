@@ -7,6 +7,7 @@ import { ArrayZipFileType, exportAsImage } from "../../Utils/utils";
 import Button from "../Button";
 import "./styles.scss";
 import { useState } from "react";
+import EditorDeImagensSvg from "../../assets/svgComponents/EditorDeImagensSvg";
 
 export type HeaderButtonStatusType =
   | "btnIphone"
@@ -270,8 +271,8 @@ export default function Header() {
               target="_blank"
               title="Editor de Imagens"
             >
-              <div className="header-icon-container">
-                <RiImageEditLine color="#333333" size={22} />
+              <div className="editordeimagens-icon-container">
+                <EditorDeImagensSvg size={38}/>
               </div>
             </a>
             {/* <a
