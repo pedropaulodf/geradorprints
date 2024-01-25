@@ -51,6 +51,16 @@
         }
       }
 
+      .editordeimagens-icon-container {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          filter: brightness(90%);
+        }
+      }
+
       .applaunchpad-icon-container {
         background: rgb(255, 94, 99);
         background: linear-gradient(
