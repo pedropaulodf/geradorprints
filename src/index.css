@@ -16,6 +16,9 @@
 
   --color-primary: #FFFFFE;
   --color-secondary: #ed3237;
+  --color-secondary-text: #FFFFFF;
+  --color-botao-entrar-text: #FFFFFF;
+  --color-box-login-text: #000000;
 
   --fundo-app-opacity: 70%;
   --fundo-app-blur: 5px;

@@ -48,7 +48,7 @@ export default function ScreenCarteirinhaDigital({
               <div
                 className="user-categoria-box"
                 style={{
-                  backgroundColor: `${colorSecondary}99`,
+                  backgroundColor: `${colorSecondary}`,
                 }}
               >
                 <p className="user-categoria">Contribuinte</p>

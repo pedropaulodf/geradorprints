@@ -39,7 +39,6 @@
       bottom: 0;
       border-radius: 1.3em 1.3em 0 0;
 
-
       .modal-carteirinha-detail {
         width: 11%;
         height: 0.5em;
@@ -72,7 +71,7 @@
         .close-icon-box {
           position: absolute;
           background: #0000000c;
-          border-radius: .5em;
+          border-radius: 0.5em;
           top: 1.5em;
           right: 1.2em;
           width: 4em;
@@ -99,7 +98,7 @@
           flex-direction: column;
           border: 2px solid #ebebeb;
           width: 60%;
-          border-radius: .8em;
+          border-radius: 0.8em;
 
           margin-top: 3.3em;
           gap: 0.7em;
@@ -130,27 +129,27 @@
             color: #bebebe;
             font-size: 2em;
             letter-spacing: 1px;
-            margin: .3em 0;
+            margin: 0.3em 0;
           }
 
-          .user-categoria-box{
+          .user-categoria-box {
             width: 100%;
             text-align: center;
-            border-radius: .5em;
+            border-radius: 0.5em;
 
             .user-categoria {
-              padding: .6em 0;
-              color: #ffffff;
+              padding: 0.6em 0;
+              color: var(--color-secondary-text);
               font-size: 1.8em;
               text-transform: uppercase;
             }
           }
         }
 
-        .qrcode-valid-time-text{
-          margin: .5em 0;
-          p{
-            padding: .6em 0;
+        .qrcode-valid-time-text {
+          margin: 0.5em 0;
+          p {
+            padding: 0.6em 0;
             color: #4e4e4e;
             font-size: 2.2em;
 
@@ -171,7 +170,7 @@
             max-height: 18em;
             min-width: 18em;
             min-height: 18em;
-            border-radius: .5em;
+            border-radius: 0.5em;
             padding: 1em;
             // border: 2px solid #000000;
           }
@@ -201,6 +200,11 @@
           justify-content: center;
           align-items: center;
           align-content: center;
+
+          div svg line,
+          div svg polyline {
+            color: var(--color-secondary-text);
+          }
         }
       }
     }

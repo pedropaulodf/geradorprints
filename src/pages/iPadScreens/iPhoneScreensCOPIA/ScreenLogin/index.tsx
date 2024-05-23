@@ -51,7 +51,19 @@ export default function ScreenLogin({ isIpad = false }: PropsType) {
             </div>
             <button type="button">ENTRAR</button>
           </div>
-          <div className="forgot-password">
+          <div
+            className="forgot-password"
+            style={{
+              backgroundColor:
+                "rgba(" +
+                parseInt(colorPrimary.slice(-6, -4), 16) +
+                "," +
+                parseInt(colorPrimary.slice(-4, -2), 16) +
+                "," +
+                parseInt(colorPrimary.slice(-2), 16) +
+                ",var(--box-login-opacity))",
+            }}
+          >
             <p>Esqueceu sua senha?</p>
           </div>
         </div>

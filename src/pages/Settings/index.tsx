@@ -8,9 +8,12 @@ export default function Settings() {
   const {
     setColorPrimary,
     setColorSecondary,
+    setColorSecondaryText,
+    setColorBotaoEntrarText,
     setFundoAppBlur,
     setFundoAppOpacity,
     setloginBoxOpacity,
+    setColorBoxLoginTexts,
     fundoAppBlur,
     fundoAppOpacity,
     loginBoxOpacity,
@@ -73,7 +76,7 @@ export default function Settings() {
       <div>
         <div className="input-container">
           <label className="header-settings-item">
-            <span>Cor Primary:</span>
+            <span>Cor Box Login:</span>
           </label>
           <input
             type="color"
@@ -83,6 +86,18 @@ export default function Settings() {
               setColorPrimary(value);
             }}
             defaultValue="#FFFFFE"
+          />
+          <label className="header-settings-item">
+            <span>Cor Box Login Texts:</span>
+          </label>
+          <input
+            type="color"
+            onChange={(evt) => {
+              const { value } = evt.target;
+              changeRootVarAtribute(value, "--color-box-login-text");
+              setColorBoxLoginTexts(value);
+            }}
+            defaultValue="#000000"
           />
         </div>
         <div className="input-container">
@@ -124,6 +139,34 @@ export default function Settings() {
               value={colorSecondary}
             />
           </div>
+        </div>
+        <div className="input-container">
+          <label className="header-settings-item">
+            <span>Cor Secondary Text:</span>
+          </label>
+          <input
+            type="color"
+            onChange={(evt) => {
+              const { value } = evt.target;
+              changeRootVarAtribute(value, "--color-secondary-text");
+              setColorSecondaryText(value);
+            }}
+            defaultValue="#FFFFFF"
+          />
+        </div>
+        <div className="input-container">
+          <label className="header-settings-item">
+            <span>Cor Text Botão Entrar:</span>
+          </label>
+          <input
+            type="color"
+            onChange={(evt) => {
+              const { value } = evt.target;
+              changeRootVarAtribute(value, "--color-botao-entrar-text");
+              setColorBotaoEntrarText(value);
+            }}
+            defaultValue="#FFFFFF"
+          />
         </div>
         <div className="input-container">
           <label className="header-settings-item">

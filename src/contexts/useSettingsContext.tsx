@@ -12,6 +12,12 @@ type PropsSettingsContext = {
   setColorPrimary: Dispatch<SetStateAction<string>>;
   colorSecondary: string;
   setColorSecondary: Dispatch<SetStateAction<string>>;
+  colorSecondaryText: string;
+  setColorSecondaryText: Dispatch<SetStateAction<string>>;
+  colorBotaoEntrarText: string;
+  setColorBotaoEntrarText: Dispatch<SetStateAction<string>>;
+  colorBoxLoginTexts: string;
+  setColorBoxLoginTexts: Dispatch<SetStateAction<string>>;
   fundoAppOpacity: number;
   setFundoAppOpacity: Dispatch<SetStateAction<number>>;
   fundoAppBlur: number;
@@ -69,6 +75,9 @@ export const SettingsContextProvider: React.FC<{
 
   const [colorPrimary, setColorPrimary] = useState("#FFFFFE");
   const [colorSecondary, setColorSecondary] = useState("#ED3237");
+  const [colorSecondaryText, setColorSecondaryText] = useState("#FFFFFF");
+  const [colorBotaoEntrarText, setColorBotaoEntrarText] = useState("#FFFFFF");
+  const [colorBoxLoginTexts, setColorBoxLoginTexts] = useState("#000000");
   const [fundoAppOpacity, setFundoAppOpacity] = useState(70);
   const [fundoAppBlur, setFundoAppBlur] = useState(5);
   const [loginBoxOpacity, setloginBoxOpacity] = useState(60);
@@ -86,6 +95,12 @@ export const SettingsContextProvider: React.FC<{
         setColorPrimary,
         colorSecondary,
         setColorSecondary,
+        colorSecondaryText,
+        setColorSecondaryText,
+        colorBotaoEntrarText,
+        setColorBotaoEntrarText,
+        colorBoxLoginTexts,
+        setColorBoxLoginTexts,
         fundoAppOpacity,
         setFundoAppOpacity,
         fundoAppBlur,

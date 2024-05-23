@@ -13,20 +13,20 @@
   padding: 2.8em 1em;
   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
 
-  div:nth-child(2){
+  div:nth-child(2) {
     margin-left: -2em;
   }
-  div:nth-child(3){
+  div:nth-child(3) {
     margin-left: 2em;
   }
 
-  .txt-data{
+  .txt-data {
     margin-bottom: 0.5em;
   }
-  .txt-valor{
+  .txt-valor {
     font-size: 1.58em;
   }
-  .txt-descricao{
+  .txt-descricao {
     font-size: 1.4em;
   }
 
@@ -37,8 +37,8 @@
   }
 
   .payment-status {
-    border-radius: 1.1em 1.1em 0em 0em ;
-    width: 9.5em; 
+    border-radius: 1.1em 1.1em 0em 0em;
+    width: 9.5em;
     height: 3.5em;
     display: flex;
     justify-content: center;
@@ -48,11 +48,11 @@
     transform: rotate(-90deg);
     margin-left: -4em;
     text-transform: uppercase;
-    
-    p{
+
+    p {
       font-size: 1.4em;
       font-weight: bold;
-      color: #FFFFFF;
+      color: #ffffff;
     }
   }
 
@@ -65,5 +65,9 @@
     justify-content: center;
     align-items: center;
     margin-right: 1em;
+
+    svg path {
+      color: var(--color-secondary-text);
+    }
   }
 }
